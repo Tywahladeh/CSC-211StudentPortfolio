@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Form</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;}
+    body{
+        font-family: Arial, Helvetica, sans-serif;}
+
+    form  { display: table;  }
+    p     { display: table-row;  }
+    label { display: table-cell; }
+    input { display: table-cell; 
+            margin-left: 60px;
+            height: 25px;
+        }
+        
+    button{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: solid 3px;
+        border-color: black;
+        border-radius: 10px;
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <fieldset>
+        <center> <h1> STUDENT RECORD </h1> </center>
+        <form method="post" action="" type="multipart">
+            <p>
+            <label for="surname"> Surname: </label> 
+            <input type="text" name="Surname"/> <br> <br>
+            </p>
+            <p>
+            <label for="other_name(s)"> Other Name(s):</label>
+            <input type="text" name="Other_Name(s)"/> <br> <br> 
+            </p>
+            <p>
+            <label for="Matric"> Matric Number:</label>
+            <input type="text" name="Matric_Number" required/> </br> <br>
+            </p>
+            <p>
+            <label for="Department"> Department:</label>
+            <input type="text" name="Department" required/> <br> <br>
+            </p>
+            <p>
+            <label for="Date_of_Birth"> Date of Birth: </label>
+            <input type="date" id="DOB" name="Date_of_Birth" required/> <br><br>
+            </p>
+            <p>
+            <label for="Gender"> Gender: </label>
+            <input type="radio" name="Gender" value="le"/>
+            <label for="Male"> Male </label>
+            <input type="radio" name="Gender" value="Female"/>
+            <label for="Female"> Female </label> <br> <br>
+            </p>
+        </form>
+        <center><button> Submit </button></center>
+    </fieldset>    
+</body>
+</html>

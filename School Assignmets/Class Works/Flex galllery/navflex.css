@@ -1,0 +1,53 @@
+.responsive-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffffc7;
+    border-radius: 20px;
+    
+}
+
+.responsive-nav ul li {
+    display:inline;
+}
+
+.responsive-nav ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.responsive-nav ul li a:hover {
+    background-color: #022a998f;
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-nav ul {
+        flex-direction: column;
+    }
+}
+
+
+.flex-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+    justify-content: space-evenly;
+    background-color: gray;
+    padding: 60px;
+}
+
+.flex-gallery img {
+    flex: auto;
+    max-width: 30%;
+    border: solid;
+    margin: 10px;
+    grid-auto-rows: auto;
+    
+}
