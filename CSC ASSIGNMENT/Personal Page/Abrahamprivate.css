@@ -1,0 +1,71 @@
+ body{
+    background-color: #1a1a1a;
+}
+h1{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+    color: aliceblue;
+
+}
+/*item{
+    flex:1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8 ease;
+    transition-property: all;
+    transition-delay: 0.5;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+    */
+
+
+.gallery_wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.friends:hover{
+background-color: grey;
+    max-width: 80%;
+}
+.family:hover{
+    background-color: grey;
+    max-width: 40%;
+}
+.church:hover{
+    background-color: grey;
+    max-width: 40%;
+}
+.school:hover{
+    background-color: grey;
+    max-width: 80%;
+}
+.family{
+    max-width: 50%;
+    transition:2s all 10ms ease-in-out;
+}
+.church{
+    max-width: 50%;
+    transition:2s all 10ms ease-in-out;
+}
+.school{
+    max-width:100% ;
+    transition:2s all 10ms ease-in-out;   
+}
+.friends{
+    max-width: 100%;
+    transition:2s all 10ms ease-in-out;
+}
+img{
+    max-width: 50%;
+    padding: 2px;
+    transition: 2s all 100ms ease-in;
+}
+a{
+ text-underline-offset: 0;
+}
