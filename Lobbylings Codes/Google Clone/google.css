@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+}
+
+.header-item {
+    text-decoration: none;
+    color: #5f6368;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.apps-icon {
+    /* Add the apps icon image */
+}
+
+.profile-icon {
+    /* Add the profile icon image */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Adjust based on header and footer height */
+}
+
+.logo {
+    margin-top: 100px; /* Adjust as needed */
+    width: 272px; /* Logo size */
+    height: auto;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 560px; /* Search box width */
+    margin: 20px auto;
+}
+
+.search-box {
+    width: 100%;
+    padding: 18px 24px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    margin-bottom: 28px; /* Space for the 'Add shortcut' button */
+}
+
+.add-shortcut-button {
+    background-color: transparent;
+    border: none;
+    color: #1a73e8;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.customize-chrome {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.customize-chrome a {
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.footer {
+    /* Footer styling */
+}
