@@ -1,0 +1,13 @@
+.x{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+p{
+    font-size: 50px;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+input{
+    font-size: 40px;
+}
