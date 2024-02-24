@@ -1,0 +1,142 @@
+body, html {
+    
+    height: auto;
+    width:auto;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .container {
+    margin:5%;
+    display: flex;
+    justify-content: center;
+    margin-right:5%;
+    margin-left: auto;
+    margin-top:0%;
+    margin-bottom: auto;
+    
+  }
+
+  .box {
+    background:#007aff;
+    padding: 11%;
+    width:auto;
+    
+    
+  }
+
+  .box2 {
+    padding: 10%;
+    
+    
+  }
+ 
+  
+  .left-side {
+    background-color: #005F99;
+
+    flex-basis: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  
+  .right-side {
+    background-color: white;
+    flex-basis: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+  }
+  
+  .logo {
+    width: 400px;
+    
+  }
+  
+  .login-form {
+    width: 100%;
+   
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="password"]::placeholder {
+    font-family: 'Arial', FontAwesome;
+  }
+  
+  .show-hide {
+    position: relative;
+  }
+  
+  .show-hide .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #005F99;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .social-login button {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .social-login .twitter {
+    background-color: #1DA1F2;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .social-login .google {
+    background-color: #3752db;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .social-login .passwordless {
+    background-color: lightblue;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  .forgot-password,
+  .sign-up {
+    color: #005F99;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    border-spacing: 20px;
+    padding: 3px;
+  }
+  
