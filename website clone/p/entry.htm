@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script async src="https://www.paypalobjects.com/webcaptcha/ngrlCaptcha.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#012169" />
+    <!-- <link rel="stylesheet" href="./index.css"/> -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://www.paypalobjects.com/webstatic/icon/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.paypalobjects.com/webstatic/icon/pp32.png"
+    />
+    <link rel="dns-prefetch" href="https://www.paypalobjects.com/" />
+    <!-- Preload font files for better performance -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Regular.woff2"
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+      href="https://www.paypalobjects.com/paypal-ui/fonts/PayPalOpen-Bold.woff2"
+    />
+    <!-- Font and normalizer necessary for the whole library -->
+    <link
+      rel="stylesheet"
+      href="https://www.paypalobjects.com/paypal-ui/web/fonts-and-normalize/2-0-0/fonts-and-normalize.min.css"
+    />
+    <title>
+      Set up your business account - PayPal
+    </title>
+    <script nonce="Ldv0TpZUVvs1EF2EID7Os/D+gsatvKXojPHomEm9S34dU7ZO" type="text/javascript">window.webpackPublicPath = 'https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88/js/client/';</script>
+<link nonce="Ldv0TpZUVvs1EF2EID7Os/D+gsatvKXojPHomEm9S34dU7ZO" href="https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88/js/client/main.css" rel="stylesheet">
+
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .vx_foreground-container {
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        background: #ffffff;
+      }
+
+      .vx_mainContent {
+        padding-bottom: 0;
+      }
+
+      #js_foreground.vx_foreground-container {
+        min-height: 100vh;
+      }
+
+      @media screen and (max-width: 768px) {
+        body {
+          background-color: #ffffff;
+          background-image: none;
+        }
+
+        .vx_foreground-container {
+          padding: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="js_foreground" class="vx_foreground-container">
+      <div id="root"></div>
+    </div>
+    <script type="text/javascript" src="https://www.paypalobjects.com/pa/js/min/pa.js"></script>
+    <script type="application/json" id="server-data">
+      {"cdnHost":"www.paypalobjects.com","session":{"businessTypes":[],"region":"NG","countryRegion":"MEA","country":"Nigeria","products":"PPCP_STANDARD","productsExternal":"EXPRESS_CHECKOUT","channel":"direct","resolvedProduct":"EXPRESS_CHECKOUT","partner":{"integration":{}},"user":{"name":"","email":""},"limitedFeatureTransactionsLimit":{"value":500,"currency":"USD"},"experiment_treatment_id":["undefined"],"experiment_experience_id":["105514"],"utmParams":{},"isExistingMerchant":"NO"},"paypalDomain":"paypal.com","locality":{"timezone":"America\u002FLos_Angeles","locale":"en-NG","directionality":"ltr","language":"en"},"requestURI":"\u002Funifiedonboarding","_csrf":"sjxhBC86KKPeIALMXmK\u002FE+0Dt0KzVNY6KYr+o=","fraudNetConfig":{"sessionId":"rv9uIVSlFuM1LBEDKdRwssMeA9vVlkFV","url":"https:\u002F\u002Fc.paypal.com\u002Fda\u002Fr\u002Ffb.js","sourceId":"UNIFIED_ONBOARDING","noJSUrl":"https:\u002F\u002Fc.paypal.com\u002Fv1\u002Fr\u002Fd\u002Fb\u002Fns?f=rv9uIVSlFuM1LBEDKdRwssMeA9vVlkFV&s=UNIFIED_ONBOARDING&js=0&r=1"},"debugId":"f888505827aba"}
+    </script>
+    <script type="application/json" id="view-data">
+      {"renderView":{"elements":[{"name":"notification","component":"AlertMessage","attributes":{"name":"notification","subtext":"error.somethingWentWrong.debugId","type":"error"}},{"name":"minimalAccountPageHeader","component":"Header","attributes":{"text":"minimalAccount.pageHeader","subtext":"minimalAccount.pageSubHeader"}},{"name":"personName","component":"NameInputs","blockPrefill":true,"validations":[{"type":"required","message":"error.required"},{"type":"custom","param":"validateNameFields","message":"error.name.invalid"}],"attributes":{"name":"personName","autoComplete":"off"}},{"name":"email","component":"EmailInput","validations":[{"type":"required","message":"error.required"},{"type":"email","message":"error.email"}],"attributes":{"type":"email","name":"email","autoComplete":"off","label":"businessAccountCreation.form.emailAddress","checkEmailExistence":true,"emailExistsError":"minimalAccount.email.error.emailExists"}},{"name":"password","component":"PasswordInput","validations":[{"type":"required","message":"error.required"},{"type":"custom","param":"validatePassword","message":"validation.password.invalidFormat"}],"attributes":{"type":"password","name":"password","autoComplete":"off","label":"minimalAccount.password.label"}},{"name":"legalAgreements","component":"LegalAgreements","attributes":{"name":"legalAgreements","config":[{"agreements":{"CONSUMER_ADVISIORY":{"isCollected":false,"shouldBePrechecked":false,"required":true,"resolveKey":"legalAgreement.CONSUMER_ADVISIORY"}},"renderType":"paragraph","resolveKey":"legalAgreement.CONSUMER_ADVISIORY"},{"agreements":{"USER":{"isCollected":false,"shouldBePrechecked":false,"required":true,"resolveKey":"legalAgreement.USER_AGREEMENT"},"PRIVACY_AGREEMENT":{"isCollected":false,"shouldBePrechecked":false,"required":true,"resolveKey":"legalAgreement.PRIVACY_AGREEMENT"}},"renderType":"checkbox_group","resolveKey":"legalAgreement.BASE_AGREEMENTS"}]},"validations":[{"type":"required","message":"error.required"}]},{"name":"errorDialog","component":"Dialog","attributes":{"name":"errorDialog","text":"error.accountCreationDeclined.text","subText":"error.somethingWentWrong.debugId","label":"common.close","isOpen":false}},{"name":"createAccountButton","component":"Button","attributes":{"name":"createAccountButton","key":"label","label":"common.agreeAndCreateAccount"}},{"name":"existingAccountLoginLink","component":"Paragraph","attributes":{"text":"minimalAccount.existingAccountLoginLink","style":{"textAlign":"center","color":"#515354"},"tracking":{"events":{"linkClick":{"event_name":"eop_mac_login_link_clicked","link":"existingAccountLoginLink"}}}}}],"persistQueryParams":true,"name":"entry","layout":"layoutType","action":{"error":[],"data":[],"validations":[],"path":"\u002Funifiedonboarding\u002FcreateMinimalAccount"},"tracking":{"events":{"pageImpression":{"prospect_type":"SIGNUP_START","event_name":"minimal_account_screen_shown"},"pageSubmit":{"event_name":"account_create_submit"}}},"state":{}}}
+    </script>
+    <script type="application/json" id="server-context">
+      {"links":{"jsBaseUrl":"https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88/js","cssBaseUrl":"https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88/css","templateBaseUrl":"https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88/templates","resourceBaseUrl":"https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88"},"pageInfo":{"date":"Jan 24, 2024 04:29:55 -08:00","hostName":"rZJvnqaaQhLn/nmWT8cSUjOx898qoYZ0yXsjOBgyvAf1foitSi9UkfbrFA5TWJLa","rlogId":"rZJvnqaaQhLn%2FnmWT8cSUotSylMGOTGk28Fhr76awO9%2BX7RT10%2BhsXRhDb48ZHSsOECEll06kMbu%2BlNVvQSFwOh8I79baYs1_18d3b72cbae","script":"node","debug":null},"locality":{"timezone":{"determiner":"viaCowPrimary","value":"America/Los_Angeles"},"country":"NG","locale":"en_US","language":"en","directionality":"ltr"},"tracking":{"fpti":{"name":"pta","jsURL":"https://www.paypalobjects.com","serverURL":"https://t.paypal.com/ts","dataString":"pgrp=unifiedonboardnodeweb%2Findex.dust&page=unifiedonboardnodeweb%2Findex.dust&pgst=1706099395502&calc=f888505827aba&nsid=ikLNTA6KtmZG782yiOr3lJXKMVm4XPRh&rsta=en_US&pgtf=Nodejs&env=live&s=ci&ccpg=NG&csci=6fff8fddd91c4f64aa9da2e49d673a68&comp=unifiedonboardnodeweb&tsrce=bizsignupnodeweb&cu=0&gacook=261511457.1706099303&ef_policy=global&c_prefs=T%3D1%2CP%3D1%2CF%3D1%2Ctype%3Dinitial"}}}
+    </script>
+    <script nonce="Ldv0TpZUVvs1EF2EID7Os/D+gsatvKXojPHomEm9S34dU7ZO" src="https://www.paypalobjects.com/web/res/515/817f18c5823773feeda4bc2feeb88/js/client/bundle.js" type="text/javascript"></script>
+  <script async src="/auth/createchallenge/05381fd6f0ca0208/recaptchav3.js?_sessionID=rv9uIVSlFuM1LBEDKdRwssMeA9vVlkFV"></script></body>
+</html>
