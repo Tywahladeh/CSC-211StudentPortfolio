@@ -1,0 +1,31 @@
+.container{
+    background:grey;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
+    display:flex;
+}
+.container>div{
+    font-size: 25px;
+    margin: 25px;
+    background:tomato;
+    line-height: 25px;
+    color:white;
+    padding: 15px;
+}
+@media(max-width:750px){
+    .container{
+        flex-direction:column;
+    }
+}
+
+.container img{
+    width: 250px;
+    border-radius: 40%;
+}
+
+body{
+    background-color:brown;
+}
