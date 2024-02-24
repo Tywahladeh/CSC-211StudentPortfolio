@@ -1,0 +1,36 @@
+body{
+    background-color: #1a1a1a;
+}
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: whitesmoke;
+    text-align: center; 
+}
+.pictures img{
+max-width: 5%;
+transition: 2s all ease-out;
+text-align: center;
+padding: 2px;
+
+}
+.pictures img:hover{
+max-width: 20%;
+}
+.pictures{
+    display: flex;
+}
+a{
+    padding: 20px;
+    color: black;
+}
+a:hover{
+    color: crimson;
+}
+.whole_pictures{
+    display: grid;
+}
+.Kara{
+    
+}

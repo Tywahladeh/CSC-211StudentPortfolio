@@ -1,0 +1,67 @@
+body{
+    background-image: url(https://th.bing.com/th/id/R.d2edb29f3f970c36aadecbb01ed0bb79?rik=z%2bAuuobpN0KNSg&riu=http%3a%2f%2fisquad.tv%2fwp-content%2fuploads%2f2018%2f08%2fNetflix-Background.jpg&ehk=Ij4PSd%2bZkTcESSlAVWoGpNmExM0fu3BgteNT6AnS9lM%3d&risl=&pid=ImgRaw&r=0);
+}
+.inner{
+background-color: rgba(0, 0, 0, 0.8);
+text-align: center;
+max-width: fit-content;
+height: 678px;
+position: relative;
+left: 386px;
+}
+body img{
+    height: 120px;
+    width: 170px;
+    mix-blend-mode: screen;
+}
+.login-body{
+    flex: fit-content;
+    flex-wrap: wrap;
+}
+h1{
+    color: antiquewhite;
+}
+h4{
+    color: aliceblue;
+}
+label{
+    color: aliceblue;
+}
+input{
+    border: solid;
+}
+input:focus{
+    border-color: aqua;
+}
+button{
+    background-color: red;
+    cursor: pointer;
+    width: 314px;
+    height: 48px;
+    border: solid black;
+}
+button:hover{
+    background-color: pink;
+}
+span{
+    color: white;
+    text-decoration: solid;
+}
+input{
+    width: 314px;
+    height: 50px;
+    color: white;
+    border: solid black;
+    background-color: #1a1a1a;
+}
+input :placeholder-shown{
+    color: aquamarine;
+}
+@media (max-width:750px) {
+    .transparentbackground{
+        display:flex;
+    }
+}
+.inner form{
+    display: flex;
+}

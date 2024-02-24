@@ -1,0 +1,87 @@
+.header{
+    background-image: url("https://images.hdqwalls.com/download/falcon-heavy-space-x-2018-bx-3840x2400.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 646px;
+}
+.header_flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 5;
+}
+.header img{
+max-width: 234px;
+max-height: 154px;
+}
+.header div{
+    flex-grow: 1;
+    flex-shrink: 5;
+    justify-content: space-evenly;
+    background-color: transparent;
+    gap: 1em;
+    cursor: pointer;
+}
+body{
+    display: contents;
+background-color: #1a1a1a;
+color: white;
+}
+.Second{
+background-image: url("https://images.hdqwalls.com/download/falcon-heavy-space-x-hd-g5-3840x2400.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 646px;
+}
+ .Third{
+    background-image: url("https://images.hdqwalls.com/download/falcon-heavy-space-x-launch-8b-3840x2400.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 646px;
+}
+.Fourth{
+    background-image: url("https://images.hdqwalls.com/download/space-x-spaceship-kv-3840x2400.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 646px;
+}
+.five{
+    background-image: url("https://i.pinimg.com/originals/70/62/73/706273f9c38ff2008140bda69ff57492.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 646px; 
+}
+p{
+
+}
+h1{
+
+}
+.more{
+    width: fit-content;
+    position: relative;
+    display: block;
+    border: solid ;
+    border-width: 2px;
+    border-color: white;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color 0.4s ease-in-out 500ms;
+}
+.more:hover{
+color: black;
+background-color: white;
+}
+
+
+.context{
+   padding-top: 350px;
+   padding-left: 23px;
+}
