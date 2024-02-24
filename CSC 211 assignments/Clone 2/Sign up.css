@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+h1{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+}
+.break{
+    color:darkgreen;
+}
+p{
+    font-size: 30px;
+}
+.place{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.cont{
+    background-color: black;
+    font-size: 40px;
+    color: white;
+    padding-left: 225px;
+    padding-right: 225px;
+}
+.hmm{
+    margin-top: 20px;
+    font-size: 20px;
+    color: gray;
+}

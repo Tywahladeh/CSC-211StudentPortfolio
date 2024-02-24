@@ -1,0 +1,315 @@
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-right: 250px;
+}
+h2{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: peachpuff;
+}
+.navbar{
+    overflow: hidden;
+    background-color:rgb(226, 110, 9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar button:hover, .dropdown:hover .dropbtn{
+    background-color: rgb(0, 153, 255);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0,0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: aquamarine;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dash{
+    width: 35px;
+    height:5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.topnav input[type=text]{
+    float:right;
+    padding: 6px;
+    border: none;
+    margin-top: 17px; 
+    font-size: 17px;
+}
+@media screen and (max-width:600px){.topnav input[type=text]{
+    border: 1px solid ;
+}
+    
+}
+.top{
+    background-color: wheat;
+}
+.class{
+    font-size: 30px;
+    color:black;
+}
+.table{
+    font-size: 40px;
+    color:black;
+}
+.chair{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.space img{
+    width: 1300px;
+    height: 900px;}
+.space{
+    margin-top: 0px;
+    font-size: 0px;
+   background-color: peachpuff;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: none;
+}
+
+.button{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:black;
+    padding-left: 10px;
+    margin-left: 10px;
+    border:solid;
+
+}
+.button:hover{
+    background-color: grey;
+}
+.gen{
+    text-align: center;
+}
+
+
+
+.big{
+     margin-top: 30px;
+     font-size: 40px;
+     color:black;
+}
+.small{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.buttons{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:black;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: solid;
+}
+.buttons:hover{
+    background-color: grey;
+}
+.shop{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:black;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.contain{
+    display: flex;
+    margin: 30px;
+    flex-direction: row;
+    flex-flow: row;
+}
+.contain img{
+    margin:30px;
+    height: 600px;
+    width:600px;
+}
+
+.buttonss{
+    border:none;
+    background-color: peachpuff;
+    font-size:0;
+    padding-left: 0;
+}
+.color{
+    height:600px;
+}
+.brown{
+    margin-top: 30px;
+    font-size: 40px;
+    color:black;
+}
+.white
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-top: 20px;
+}
+.black{
+text-align: center;
+}
+.vibe{
+    height:600px;
+    margin-top: 30px;
+}
+.gen3{
+    text-align: center;
+}
+.meat{
+    margin-top: 30px;
+    font-size: 40px;
+    color:black;
+}
+.fish{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contained{
+   display: flex;
+    margin: 30px;
+    flex-direction: row;
+    flex-flow: row;
+}
+.contained img{
+    margin:30px;
+    height: 600px;
+    width:600px;
+}
+@media (max-width:800px){
+    .contained{
+        flex-direction: column;
+    }
+    .contain{
+        flex-direction: column;
+    }
+}
+.bold{
+    margin-top: 30px;
+    font-size: 40px;
+    color:black;
+}
+
+       
+.bolder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.blah{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.while{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.gone{
+
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.squid{
+   font-weight: bold; 
+}
+.content{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.divi{
+    display: grid;
+   
+    grid-template-columns: 50% 50%;
+    margin: 10px;
+    height: 80vh;
+}
+.divi img{
+    width: 500px;
+    margin: 10px;
+    background-color: peachpuff;
+    height: 500px;
+}
+.sign{
+    text-align: left;
+    padding-left: 100px;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.sub{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    padding-left: 100px;
+    margin-top: 20px;
+}
+.marble:hover{
+    background-color: gray;
+}
+.mine{
+    text-align: left;
+    padding-left: 100px;
+}
+ul li{
+    display: inline;
+    padding: 70px;
+    margin-left: 70px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.gift{
+    font-size: 20px;
+}
