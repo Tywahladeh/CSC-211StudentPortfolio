@@ -1,0 +1,36 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Ariel, Helvetica, sans-serif;
+  text-decoration: none;
+ }
+.navbar ul { 
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: grey;
+  color: white;
+}
+
+.navbar li { 
+ list-style-type: none;
+  padding: 20px;
+  text-decoration: none;
+}
+.navbar-links:hover { 
+ background-color: cyan;
+}
+.navbar-links:hover a { 
+ color: grey;
+}
+@media (max-width: 750px) { 
+ .navbar ul { 
+   flex-wrap: wrap;
+   flex-direction: column;
+ }
+ .navbar-links { 
+   width: 100%;
+   text-align: center:
+  }
+}

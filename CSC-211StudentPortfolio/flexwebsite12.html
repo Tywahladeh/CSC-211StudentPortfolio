@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8" />
+<title>untitled</title>
+<meta name="generator" content="Geany 2.0" />
+<style>
+	/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: #ccc;
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+.btn {
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(flex101.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: var(--light);
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: var(--light);
+}
+
+/* Top Box */
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+/* Boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+/* Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Top Container -->
+    <section class="top-container">
+      <header class="showcase">
+        <h1>Your Web Presence</h1>
+        <p>The company itself is a very successful company. I liked her! There is nothing at all!</p>
+        <a href="#" class="btn">Read More</a>
+      </header>
+      <div class="top-box top-box-a">
+        <h4>Membership</h4>
+        <p class="price">$199/mo</p>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+      <div class="top-box top-box-b">
+        <h4>Pro Membership</h4>
+        <p class="price">$299/mo</p>
+        <a href="" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <!-- Boxes Section -->
+    <section class="boxes">
+      <div class="box">
+        <i class="fas fa-chart-pie fa-4x"></i>
+        <h3>Analytics</h3>
+        <p>It is very important for the customer to pay attention to the adipiscing process. Like, quick?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe fa-4x"></i>
+        <h3>Marketing</h3>
+        <p>It is very important for the customer to pay attention to the adipiscing process. Like, quick?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-cog fa-4x"></i>
+        <h3>Development</h3>
+        <p>It is very important for the customer to pay attention to the adipiscing process. Like, quick?</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-users fa-4x"></i>
+        <h3>Support</h3>
+        <p>It is very important for the customer to pay attention to the adipiscing process. Like, quick?</p>
+      </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+      <img src="flex102.jpg" alt="">
+      <div>
+        <h2>Your Business On The Web</h2>
+        <p>The company itself is a very successful company. Can we soften the lives of others by rejecting them?
+          What and how indeed! But with desire he flees from the pains of the world, and they provide for the harsher advantages.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio">
+      <img src="flex103.jpg" alt="">
+      <img src="flex104.jpg" alt="">
+      <img src="flex105.jpg" alt="">
+      <img src="flex106.jpg" alt="">
+      <img src="flex107.jpg" alt="">
+      <img src="flex108.jpg" alt="">
+      <img src="flex109.jpg" alt="">
+      <img src="flex110.jpg" alt="">
+      <img src="flex111.jpg" alt="">
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>GridBiz &copy; 2018</p>
+    </footer>
+
+  </div>
+  <!-- Wrapper Ends -->
+</body>
+
+</html>

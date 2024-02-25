@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ <title>Udoh David Biodata form</title>
+  <style>
+	  body { 
+	        background: grey;
+	       padding: 0;
+	       margin:0;
+	       line-height: 30px;
+	       spacing: 20px;
+	   }
+	 form  { 
+		 background: white;
+		 font-size: 20px;
+		 padding: 50px;
+		 border: 2px solid black;
+		spacing: 50px;
+	 } 
+	 
+	  
+   </style>
+</head>
+<body>
+<h1> Biodata Form </h1>
+	<fieldset>
+  <form method ="post" action="" type="multipart" >
+	  <label for="name"> Name </label>
+	  <input type="text" name="name" placeholder=" Enter your name" required /><br>
+	  <label for="age"> Age </label>
+	  <input type="number" name="age" required /><br>
+	  <label for="address"> Address</label>
+	  <input type="textarea" name="address" required /><br>
+	  <label for="phonenumber"> Phone Number</label>
+	  <input type="text" name="phonenumber" required /><br>
+	  <label for="email"> Email </label>
+	  <input type="email" name="email" required /><br>
+	  <label for="dob"> Date of Birth </label>
+	  <input type="date" name="dob" required /><br>
+	   <label for="level"> Current Level</label>
+	  <select name="level">
+		  <option name="level" value="100"> 100</option>
+		  <option name="level" value="200"> 200</option>
+		  <option name="level" value="300"> 300</option>
+		  <option name="level" value="400"> 400</option>
+	  </select><br>
+	  <label for="nationality"> Nationality</label>
+	  <select name="nationality">
+		  <option name="nationality" value="Argentina"> Argentina</option>
+		  <option name="nationality" value="Berlin"> Betrlin</option>
+		  <option name="nationality" value="Canada"> Canada</option>
+		  <option name="nationality" value="Nigeria"> Nigeria</option>
+	  </select><br>
+	  <label for="gender">Gender</label>
+	  <input type="radio" name="gender" value="male" />
+	  <label for="male">Male</label>
+	  <input type="radio" name="gender" value="female" />
+	  <label for="female" value="female">Female</label><br>
+	  <label for="passport">Passport</label>
+	  <input type="file" name="passport" /><br>
+	  <button> submit </button>
+</fieldset>
