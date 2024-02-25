@@ -1,0 +1,42 @@
+body{
+    border:double;
+height: 300px;
+width: 300px;
+margin-left: 500px;
+margin-top: 50px;
+border-width: 15px;
+border-color: black;
+border-radius: 10px;
+padding-left: 5px;
+}
+
+div{
+    margin-bottom: 28px;
+}
+#num1{
+    background:black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+}
+#num2{
+    background:black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+}
+#result{
+    background:black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+}
