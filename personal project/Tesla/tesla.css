@@ -1,0 +1,90 @@
+nav{
+    background: skyblue;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+  }
+#logo{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    display: flex;
+    justify-content: space-between;
+}
+.menulinks{
+    color: red;
+    list-style-type:none;
+    display: flex;
+}
+ .menulinks li{
+    background: blue;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+}
+.menulinks li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+body{
+    margin: auto;
+    overflow-x: hidden;
+    width: 100%;
+    background: skyblue;
+  }
+  header{
+    background-image: url(tesla\ 2.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: contain;
+    background-size: cover;
+    color: black;
+    position: relative;
+  }
+  .heading{
+    font-size: 70px;
+    color: white;
+  }
+  .smallheading{
+    font-size: 20px;
+    color: white;
+  }
+  footer{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    height: 100px;
+  }
+  .model5{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+
+  }
+  @media (max-width:750px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:750px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,238 @@
+ nav{
+    background: black;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+  }
+  #logo{
+    color: red;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Segoe UI';
+  }
+  .menu-links{
+    color: white;
+    list-style-type:none;
+    display: flex;
+  }
+  .menu-links li{
+    background: red;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .menu-links li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  section{
+    width: 100%;
+  }
+  
+  hr{
+    height: 10px;
+    background-color: rgba(33, 31, 31, 0.913);
+    border: none;
+  }
+  
+  body{
+    margin: auto;
+    overflow-x: hidden;
+    width: 100%;
+    background: black;
+  }
+  
+  .section-class{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    color: white;
+    flex-direction: row;
+  }
+  *{
+    margin: 0px;
+    font-family: 'Segoe UI';
+  }
+  
+  header{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWn-OpxKGVjPYN39JePZWbzDKekmX_i3tNDg&usqp=CAU);
+    background-repeat: no-repeat;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: contain;
+    background-size: cover;
+    color: white;
+    position: relative;
+  }
+  .heading{
+    font-size: 60px;
+  }
+  .small-heading{
+    font-size: 30px;
+  }
+  form #email{
+    padding: 10px;
+    width: 100vh;
+    outline: 0px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  form button{
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    padding: 3px;
+    border: none;
+  }
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #dark-fill{
+    background-color: rgba(0, 0, 0, 0.6);
+    background: black;
+    opacity: 0.7;
+    height: 85vh;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  #questions{
+    background-color: black;
+    color: white;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    /* padding-top: 30px; */
+    padding: 30px;
+    /* padding-bottom: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    height: 100px;
+  }
+  .faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+  }
+  .faq-class{
+    text-align: left;
+    background-color: rgba(33, 31, 31, 0.913);
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .faq-class p{
+    font-size: 25px;
+  }
+  .faq-wrapper{
+    display: none;
+  }
+  .faq-class:hover  .faq-wrapper{
+    display: block;
+  }
+  
+  @media  screen and (max-width: 1200px) {
+    .heading{
+      font-size: larger;
+    }
+    .small-heading{
+      font-size: smaller;
+    }
+    .section-class{
+      flex-direction: column;
+      height: fit-content;
+      text-align: center;
+    }
+    .section-class img{
+      width: 50%;
+    }
+  
+    .section-class h4{
+      width: 80%;
+    }
+  
+    .faq{
+      width: 100%;
+    }
+  
+    .faq-class p{
+      font-size: large;
+    }
+    footer{
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    form #email{
+      width: 100%;
+    }
+    header{
+      text-align: center;
+    }
+    #logo{
+      font-size: 20px;
+    }
+    nav{
+      justify-content: space-around;
+    }
+    .menu-links li{
+      padding: 7px;
+    }
+    .menu-links li a{
+      font-size: 15px;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;  
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: none;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    /* background-color: red; */
+    border-radius: 10px;
+  
+  }

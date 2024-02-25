@@ -1,0 +1,93 @@
+.form{
+    margin: auto;
+    width: 30%;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+label{
+    font-size: 20px;
+    color: black;
+}
+
+input, textarea{
+    width: 350px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    outline: 0px;
+    border: none;
+    opacity: 0.9;
+}    
+#button{
+    background: skyblue;
+    align-content: center;
+    width: 370px;
+    border: 1px solid white;
+
+}
+#message{
+    border: 1px solid black;
+    width: 350px;
+}
+#email{
+    border: 1px solid black; 
+}
+#name{
+    border: 1px solid black;
+}
+#info{
+    font-size: 35px;
+    font-weight: 20px;
+}
+nav{
+    background: black;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+  }
+  #logo{
+    color: red;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Segoe UI';
+  }
+  .menu-links{
+    color: white;
+    list-style-type:none;
+    display: flex;
+  }
+  .menu-links li{
+    background: red;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .menu-links li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    height: 100px;
+  }
+  
+
+
