@@ -1,0 +1,67 @@
+/*fonts files addings--*/
+
+@font-face{
+    font-family: "whitney light";
+    src:url("./assets/fonts/whitneylight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "whitney medium";
+    src: url("./assets/fonts/whitneymedium.woff") format("woff");
+}
+
+@font-face{
+    font-family: "whitney bold";
+    src: url("./assets/fonts/whitneymedium.woff") format("woff");
+}
+
+/*---fonts files addings done--*/
+
+/*---writing root properties used in this page---*/
+
+:roots{
+  --light-clr: #fff;
+  --dark-clr: #23272a;
+  --brand-clr: #5865f2;
+  --off-white-clr: #f6f6f6;
+  --general-font-size: 2rem;
+  --primary-title-font-size: 4.8rem;
+  --secondary-title-font-size: 4rem;
+  --main-font-family-light: "whitney light", sans-serif;
+  --main-font-family-medium: "whitney medium", sans-serif;
+  --main-font-family-bold: "whitney bold", sans-serif;
+  --num-of-grid-columns: 4;
+  --sectionj-spacing: 5.6rem 2.4rem;
+  --container-width: 126rem;
+}
+
+/*---writing root properties used in this page done---*/
+
+/*---global css used----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: var(--general-font-size);
+    font-family: var(--main-font-family-light);
+}
+
+a{
+    text-decoration: none; 
+    display: inline-block;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/**----global css done---**/
