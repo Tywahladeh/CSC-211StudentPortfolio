@@ -1,0 +1,13 @@
+body{
+    background: rgba(0, 0, 0, 0.6) url('forex.jpg.jpg') center fixed;
+    background-size: cover;
+}
+
+p{
+    color: blueviolet;
+}
+
+h2{
+    color: blue;
+    font-size: 300%;
+}
