@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&family=Poppins:wght@300;400;500&display=swap");
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
+/* font-family: 'Titillium Web', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi:wght@400;500;600;700&family=Noto+Sans+NKo+Unjoined:wght@400;500;600;700&display=swap");
+/* font-family: 'Noto Sans Kawi', sans-serif;
+font-family: 'Noto Sans NKo Unjoined', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  min-height: 6rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  border-bottom: solid 1px rgb(1, 179, 1);
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+.sticky-header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header-text {
+  color: rgb(153, 153, 153);
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding: 0 3.2rem;
+}
+.header-text-1 {
+  padding: 0 3.2rem 0 6.5rem;
+  margin: 0 2px;
+}
+.header-text:hover {
+  color: white;
+  font-weight: 400;
+}
+.logo-img {
+  width: 3.5rem;
+  height: auto;
+  padding-left: 6rem;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.head-icons {
+  color: rgb(153, 153, 153);
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.head-icons:hover {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-icon-container {
+  height: 2.1rem;
+  width: 5rem;
+  padding-top: 0.2rem;
+  padding: 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon-container-1{
+  padding-left: 2rem;
+}
+
+.nav-icon-container-2{
+margin-right: 5rem;
+}
+
+.cart-items{
+  padding: 0 1rem 1rem 1rem;
+  font-size: 1.5rem;
+  color: #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Titillium Web', sans-serif;
+  cursor:default ;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  top: 5rem;
+  right: 7rem;
+}
+
+.sub-menu .speech-balloon {
+  background-color: rgb(44, 43, 43);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 24rem;
+  height: 26rem;
+  position: relative;
+  border: 3px solid #555;
+}
+
+.speech-balloon ul{
+  list-style: none;
+}
+
+.text-icons:hover{
+  color: #44d62c;
+}
+
+.text-icons{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hr-drop-down{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(83, 83, 83);
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.drop-down-icon{
+  font-size: 2.4rem;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.text-icons p{
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Show the sub-menu on hover */
+.shopping-container:hover .sub-menu {
+  display: block;
+}
+
+/* Speech balloon tail */
+.speech-balloon::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  right: 1.3rem;
+  border-width: 11px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.offer {
+  background-color: rgb(83, 83, 83);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  width: auto;
+  min-height: 4.3rem;
+  font-size: 1.3rem;
+  padding-top: 6rem; /* Adjust padding as needed */
+}
+.offer p {
+  padding-top: 0.2rem;
+}
+.main-card-1 {
+  background-image: url(Images/1st.webp);
+}
+.main-cards {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: baseline;
+  min-height: 118vh;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  background-size: 153%;
+  /* background-repeat: no-repeat; */
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  cursor: pointer;
+}
+.card-text {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+}
+.card-text-h {
+  padding-top: 3.5rem;
+  font-size: 5.5rem;
+  font-weight: 600;
+  line-height: 6rem;
+}
+.card-text-d {
+  font-size: 2.8rem;
+  font-weight: 400;
+  padding-bottom: 0.2rem;
+}
+
+.card-links {
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 400;
+  /* padding: 0rem 2rem; */
+  text-decoration: none;
+  padding-left: 2rem;
+}
+.card-links:hover {
+  text-decoration: underline;
+}
+.link-goto {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(7, 194, 7);
+  padding-right: 2rem;
+  padding-left: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Titillium Web", sans-serif;
+}
+hr {
+  border: 5.5px solid rgb(44, 43, 43);
+}
+.main-card-2 {
+  background-image: url(Images/2nd.webp);
+}
+.main-card-3 {
+  background-image: url(Images/3rd.webp);
+}
+.measuring-hrs {
+  border: 5px solid white;
+}
+.card-rows {
+  /* width: auto; */
+  min-height: 55rem;
+  background-color: rgb(44, 43, 43);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: baseline;
+  min-height: 55rem;
+  width: 49.5%;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  cursor: pointer;
+}
+.card-1 {
+  background-image: url(Images/1.webp);
+}
+.card-2 {
+  background-image: url(Images/2.webp);
+}
+.card-3 {
+  background-image: url(Images/3.webp);
+}
+.card-4 {
+  background-image: url(Images/4.webp);
+}
+.card-5 {
+  background-image: url(Images/5.webp);
+}
+.card-6 {
+  background-image: url(Images/6.webp);
+}
+.side-card-text {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+.side-card-h {
+  font-weight: 600;
+  font-size: 4rem;
+  padding-top: 2rem;
+  text-align: center;
+  line-height: 4rem;
+}
+.side-card-d {
+  font-weight: 400;
+  font-size: 2.15rem;
+  padding-top: 1rem;
+}
+.side-card-links {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding-left: 2rem;
+  font-family: "Titillium Web", sans-serif;
+}
+.side-card-links:hover {
+  text-decoration: underline;
+}
+.side-card-goto {
+  color: rgb(7, 194, 7);
+  font-size: 1.7rem;
+  padding-right: 2rem;
+  padding-left: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Titillium Web", sans-serif;
+}
+.exclusive {
+  background-color: rgb(216, 149, 25);
+  width: 7.5rem;
+  height: 3.1rem;
+  padding: 0.3rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: -1.5rem;
+}
+.exclusive-text {
+  color: black;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.exclusive-text-d {
+  font-size: 1rem;
+}
+.exclusive-text-h {
+  font-size: 1.5rem;
+}
+footer {
+  background-color: rgb(17, 17, 17);
+  min-height: 38.5rem;
+  width: auto;
+}
+.footer-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.columns {
+  color: rgb(143, 143, 143);
+  line-height: 3rem;
+  font-size: 1.3rem;
+  padding: 2.4rem 2.5rem 0rem 2.5rem;
+  font-family: "Titillium Web", sans-serif;
+}
+.columns ul li:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.column-h {
+  color: white;
+  cursor: default;
+}
+.column-3 {
+  margin-left: 6rem;
+}
+.column-5 {
+  line-height: 2rem;
+  display: flex;
+}
+.column-6 {
+  display: flex;
+  margin-left: 17rem;
+  padding-right: 5rem;
+}
+.columns li {
+  list-style: none;
+}
+.fa-ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.fa-ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.follow-h {
+  margin-bottom: 10px;
+  padding-left: 3rem;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+  cursor: default;
+}
+
+.fa-ul li .fa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1.5px solid rgb(143, 143, 143);
+  border-radius: 50%;
+  color: rgb(143, 143, 143);
+  font-size: 1.5rem;
+}
+.fa-ul li .fa-icon i {
+  font-size: 1.3rem;
+}
+.slogan {
+  color: rgb(7, 194, 7);
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+.trade-mark {
+  font-size: 1.5rem;
+  padding-left: 0.1rem;
+  position: relative;
+  bottom: 0.5rem;
+  color: rgb(7, 194, 7);
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+}
+.footer-hr-container {
+  width: 90vw;
+  margin: 2rem 5rem;
+  margin-bottom: 1.5rem;
+}
+.footer-hr {
+  border: none;
+  height: 1px;
+  background-color: #555;
+}
+.end {
+  color: #999;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+.legal-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70rem;
+  font-family: "Titillium Web", sans-serif;
+}
+.copyright {
+  font-family: "Titillium Web", sans-serif;
+}
+.legal-terms {
+  display: flex;
+  align-items: center;
+  min-width: 35rem;
+  justify-content: space-between;
+}
+.legal-terms p {
+  display: inline;
+}
+.legal-term-text {
+  list-style: none;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 20rem;
+  margin-right: 5rem;
+}
+.hover:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.no-bold-hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+.bold {
+  font-weight: 600;
+  color: white;
+}

@@ -1,0 +1,36 @@
+body{
+    background: linear-gradient(rgb(0, 0, 53), rgb(80, 0, 24));
+    margin-left: 20pxs;
+    line-height: 20px;
+}
+
+fieldset{
+    padding-left: 20px;
+}
+
+
+label {
+    color: white;
+   
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: regular;
+}
+
+input{
+    width:auto;
+    height:20px;
+    margin-right: 20px;
+}
+button {
+    background: lightblue;
+    
+    padding: 5px;
+}
+
+form {
+    margin: 20px;
+}

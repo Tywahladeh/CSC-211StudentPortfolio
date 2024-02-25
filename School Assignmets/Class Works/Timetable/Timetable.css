@@ -1,0 +1,117 @@
+table{
+    table-layout: auto;
+    border: solid;
+    border-collapse: collapse;
+    line-height: 4;
+    text-align: center;
+    margin: auto;
+    border-color: rgb(0, 55, 255);
+    column-width: 40px;
+    width: 90%;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+tr, th, td{
+   border: solid;
+   border-color: rgb(0, 81, 255);
+   border-width: 2px;
+   
+}
+
+
+th{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 9, 78);
+}
+
+
+
+#time{
+    column-span: 3;
+    line-height: 7;
+    text-align: top;
+    column-span: all;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 38, 128);
+
+}
+
+#break{
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(0, 38, 128);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#monday{
+    line-height: 7;
+    font-weight: bold;
+    background-color: lightblue;
+    color: rgb(0, 0, 0);
+}
+
+#monday-2{
+    color: white;
+    background-color: rgb(0, 38, 128);;
+}
+
+#tuesday{
+    line-height: 7;
+    font-weight: bold;
+    background-color: white;
+    color: black
+}
+
+#tuesday-2{
+    color: white;
+    background-color: rgb(0, 38, 128);
+}
+
+#wednesday{
+    line-height: 7;
+    font-weight: bold;
+    background-color: lightblue;
+}
+
+#wednesday-2{
+    color: white;
+    background-color: rgb(0, 38, 128);
+}
+
+#thursday{
+    line-height: 7;
+    font-weight: bold;
+    background-color: white;
+}
+
+#thursday-2{
+    color: white;
+    background-color: rgb(0, 38, 128);
+}
+
+#friday{
+    line-height: 7;
+    font-weight: bold;
+    background-color: lightBLUE;
+}
+
+#friday-2{
+    color: white;
+    background-color: rgb(0, 38, 128);
+}
+
+tfoot{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(0, 38, 128);
+
+}
