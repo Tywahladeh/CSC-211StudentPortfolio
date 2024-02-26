@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: grid;
+  /* grid-area: header; */
+  background-image: url(./earth-1756274_1280.webp);
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.nav {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 20px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+li a:hover {
+  border-bottom: 1px solid white;
+}
+.text {
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.section1 {
+  text-align: center;
+  /* background: url(./luke-chesser-pJadQetzTkI-unsplash.jpg); */
+  color: rgb(252, 247, 247);
+  padding: 30px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.grid > img {
+  width: 420px;
+  height: 300px;
+}
+.content {
+  display: flex;
+  box-shadow: -5px 0px 17px 0px white;
+  padding: 35px;
+  border-radius: 20px;
+}
+body{
+  background-image: url(./astronomy-1867616_1280.jpg);
+}
