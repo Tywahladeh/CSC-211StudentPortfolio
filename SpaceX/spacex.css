@@ -1,0 +1,210 @@
+@font-face{
+  font-family: D-DIN-Bold;
+  src: url("fonts/d-din/D-DIN.otf");
+}
+html, body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: black;
+  color:#fff;
+  font: 14px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+}
+a{
+  color:#fff;
+}
+svg{
+  fill:#fff;
+}
+header{
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+}
+header a.logo {
+  margin-left: 40px;
+
+}
+@media (min-width: 1000px){
+  header a.logo {
+    margin-left: 40px;
+     
+  }
+}
+header svg{
+  width: 200px;
+}
+.right-nav{
+  position: fixed;
+  right: 0;
+  top: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+}
+.right-nav a{
+  display: none;
+}
+@media (min-width: 1000px) {
+  .right-nav a{
+    display: inline-block;
+    padding: 0 ;
+    margin: 0 50px;
+  }
+}
+.center-nav{
+  display: none;
+}
+@media (min-width: 1000px) {
+  .center-nav{
+    display: block;
+  }
+}
+.center-nav a, .right-nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0 13px;
+  position: relative;
+}
+.center-nav a::before, .right-nav a::before{
+content:'' ;
+width: 0;
+right: 0;
+bottom: -3px;
+height: 2px;
+background-color: #fff;
+position: absolute;
+transition: .2s linear;
+}
+.center-nav a:hover:before, .right-nav a:hover:before{
+  left: 0;
+  right: initial;
+  width: 100%;
+}
+
+.hamburger{
+  position: absolute;
+  right: 0;
+  top: -7px;
+  color: #fff;
+  padding: 20px;
+  background-color: transparent;
+  border: 0;
+  transform: rotate(90deg);
+  cursor: pointer ;
+}
+section{
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  
+}
+section div.content-outer{
+  flex-grow: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+section div.content{
+  position: absolute;
+  bottom: 15vh;
+  left: 50px;
+  max-width: 520px;
+  width: 50%;
+
+  
+}
+section div.content h2{
+  font-size: 48px;
+  margin: 0 5px;
+  min-width: 15%;
+}
+section div.content h3{
+  margin: 0 0 15px;
+  
+}
+section div.content a{
+  border: 2px solid #fff;
+  padding: 17px 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 40px;
+  position: relative;
+}
+section div.content a::before{
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  background-color: white;
+}
+section div.content a:hover:before{
+  height: 100%;
+  top: initial;
+  bottom: 0;
+}
+section div.content a span{
+  position: relative;
+  z-index: 1;
+  transition: color .2s ease-in-out;
+}
+section div.content a span:hover{
+  color: #000;
+}
+.video-container{
+  max-width: 100%;
+  background: black;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+.video-container > video video{
+  width: 50%;
+  height: 50%;
+  margin-left: -10%;
+}
+footer{
+  padding: 30px;
+  font-size: 12px;
+  font-weight: 400;
+  
+  font: 11px D-DIN-Bold,Arial,Verdana,sans-serif;
+  
+}
+footer nav{
+  text-align: center;
+}
+footer nav span{
+  display: inline-block;
+  padding-right: 40px;
+  text-transform: uppercase;
+  
+}
+footer nav a{
+  padding: 0 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+footer nav a:hover{
+  color: #aaa ;
+}
