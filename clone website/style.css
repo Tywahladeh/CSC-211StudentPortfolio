@@ -1,0 +1,56 @@
+.parent {
+    border: 1px solid #FFFFFF;
+    padding: 2rem 2rem;
+    text-align: center;
+    background-color: #FFFFFF;
+  }
+  .child {
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    padding-top: 100px;
+  }
+  img{
+    height: 60vh;
+    animation: 2s ease-in-out 0s infinite alternate-reverse both running MoveUpDown;
+  }
+ h1{
+    text-size-adjust: 10px;
+}
+button{
+    background-color: rgb(255, 79, 91);
+    color: rgb(255, 255, 255);
+    position: relative;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 400;
+    padding: 1rem 3em;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    float: left;
+}
+#child1{
+    padding-right: 100px;
+}
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(45, 43, 43);
+    margin-top: 2rem;
+    text-align: left;
+}
+p{
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: eurostile, sans-serif;
+    margin-top: 1rem;
+    line-height: 2rem;
+    text-align: left;
+}
+#child2{
+  padding-left: 50px;
+}
