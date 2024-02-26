@@ -1,0 +1,128 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body{
+    background-image:url('calculator images/background.jpg');
+}
+
+
+.calculator{
+    background: transparent;
+    width: 600px;
+    height: 650px;
+    border: solid;
+    border-color: white;
+    border-width: 4px;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 29px;
+    text-align:center; 
+    margin-top:45px; 
+    color:white;
+}
+
+form{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    background: transparent;
+    width: 320px;
+    height: 40px;
+    margin-top: 29px;
+    border-radius: 40px;
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: white;
+    border: solid;
+    border-width: 2px;
+    border-color:white;
+    outline: none;
+    transition: width, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+}
+
+input:hover{
+    width: 285px;
+    box-shadow: 0px 0px 0px black, 0px 0px 7px skyblue;
+}
+
+::placeholder{
+    font-size: 15px;
+    padding-left: 5px;
+    color: rgb(203, 198, 198);
+}
+
+#submit{
+    font-size: 18px;
+    width: 85px;
+    padding-left: 2px;
+    text-align: center;
+    transition: width, font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+#submit:active{
+    width: 82px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+select{
+    background: linear-gradient(rgb(5, 5, 99), white, rgb(5, 5, 99));
+    justify-content: center;
+    text-align: center;
+    width: 110px;
+    height: 29px;
+    margin-top: 25px;
+    border-radius: 40px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow, border, border-color, border-width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+select:hover{
+    box-shadow: 0px 0px 0px black, 0px 0px 7px skyblue;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+
+h5{
+    color: white;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+span{
+    color: white;
+    font-size: 20px;
+}

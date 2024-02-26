@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.portfolio{
+    color: silver;
+    font-size: 22px;
+    margin-left: -1px;
+    letter-spacing: 1px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: /*rgb(13, 13, 13)*/ black;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 0 ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    color: white;
+    display: inline-flex;
+    font-size: 12px;
+    margin-inline-start: 25px;
+    list-style-type: none;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    transition: color;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+
+
+nav ul li:hover{
+    color: rgb(3, 149, 217);
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button{
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: solid;
+    border-width: 1.5px;
+    border-color:  rgb(3, 149, 217);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-right: 7px;
+    padding-left: 7px;
+    transition: background-color, color, border-color;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+}
+
+.button:hover{
+    background-color: rgb(3, 69, 131);
+    border-color: silver;
+    box-shadow: 0px 0px 4px black, 0px 0px 7px white;
+}
+
+.form form {
+    width: 380px;
+    max-width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form form input:first-child{
+    display: inline-block;
+    background-color: rgb(238, 228, 228);
+    color: black;
+    width: 50%;
+    padding-top: 7px;
+    padding-right: 70px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color:  rgb(3, 69, 131);
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(48, 42, 42);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.form form input:last-child{
+    position: absolute;
+    top: 5px;
+    right: 115px;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    background-color: rgb(19, 125, 224);
+    color: white;
+    cursor: pointer;
+}
+
+.contents{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.contents h1{
+    font-size: 50px;
+    letter-spacing: 0.6px;
+    color: silver;
+    margin-bottom: 20px;
+}
+
+
+.contents h2{
+    font-size: 28px;
+    margin-bottom: 7px;
+    color: rgb(19, 125, 224);
+    letter-spacing: 0.6px;
+}
+
+.contents p{
+    color: silver;
+    padding-top: 2px;
+    font-size: 15spx;
+    line-height: 1.4;
+    max-width: 550px;
+    letter-spacing: 0.4px;
+}
+
+span{
+    color:  rgb(19, 125, 224) ;
+    line-height: 30px;
+    
+}
+
+.contents a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: silver;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(19, 125, 224) ;
+    background-color: transparent;
+    transition: background-color, color, border-color, box-shadow;
+    transition-timing-function: linear;
+    transition-duration: 0.4s;
+}
+
+.contents a:hover{
+    background-color: rgb(3, 69, 131);
+    border-color: silver;
+    color: white;
+    box-shadow: 0px 0px 0px black, 0px 0px 3px white;
+}
+
+.images{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 75%;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transform: translate(-5%);
+    transition: bottom 1s, left 1s;
+}
+
+/*.images:hover  .man{
+    bottom: 40px;
+}*/
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contents {
+        margin-left: 10%;
+    }
+
+    .images {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contents {
+        margin-left: 5%;
+    }
+
+    .images {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+    }
+}
