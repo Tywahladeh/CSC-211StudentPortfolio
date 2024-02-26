@@ -1,0 +1,16 @@
+.table {
+  width: 100%;
+}
+.tableInfo {
+  width: 600px;
+  height: 100px;
+  margin-top: 20px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: lighter;
+}
