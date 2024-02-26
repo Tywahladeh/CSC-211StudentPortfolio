@@ -1,0 +1,17 @@
+body {
+    border: double;
+    height: 500px;
+    width: auto;
+    margin-left: 400px;
+    margin-top: 40px;
+    border-width: 20px;
+    border-color: red;
+    border-radius: 15px;
+    padding-left: 7px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+div {
+    margin-bottom: 30px;
+}
