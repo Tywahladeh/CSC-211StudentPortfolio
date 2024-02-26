@@ -1,0 +1,46 @@
+.container{ 
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: rgba(44, 42, 42, 0.349);
+    padding: 20px;
+    border-radius: 50px;
+
+}
+.container >a{
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 200px;
+    display: block;
+    border-radius: 40px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+
+}
+.flex-row{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+figcaption{
+    text-align: center;
+    color: black;
+}
+body{
+    background-color: gray;
+}
+#mini{
+    text-align: center;
+    font-size-adjust: 18;
+}
