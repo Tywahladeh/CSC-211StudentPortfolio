@@ -1,0 +1,26 @@
+.navigation{
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+}
+ul li{
+    margin: 20px;
+    list-style-type: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul li a:hover{
+    background-color:white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+}

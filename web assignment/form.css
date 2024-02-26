@@ -1,0 +1,43 @@
+form{
+    background-color: black;
+    width: 50%;
+    padding:20px;
+}
+label{
+    color: white;
+}
+.text{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.text2{
+    width: 98%;
+    padding: 10px;
+}
+.navigation{
+    background-color: black;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+}
+ul li{
+    margin: 20px;
+    list-style-type: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+ul li a:hover{
+    background-color:white;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+}
