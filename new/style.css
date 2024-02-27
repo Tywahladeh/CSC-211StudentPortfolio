@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.portfolio{
+    color: silver;
+    font-size: 22px;
+    margin-left: -35px;
+    letter-spacing: 1px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(13, 13, 13);
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 0 ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    color: white;
+    display: inline-flex;
+    font-size: 12px;
+    margin-inline-start: 18px;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    transition: color;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
+
+
+nav ul li:hover{
+    color: rgb(3, 149, 217);
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contents{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.contents h1{
+    font-size: 50px;
+    letter-spacing: 0.6px;
+    color: silver;
+    margin-bottom: 20px;
+}
+
+
+.contents h2{
+    font-size: 28px;
+    margin-bottom: 7px;
+    color: rgb(19, 125, 224);
+    letter-spacing: 0.6px;
+}
+
+.contents p{
+    color: silver;
+    padding-top: 2px;
+    font-size: 15spx;
+    line-height: 1.4;
+    max-width: 550px;
+    letter-spacing: 0.4px;
+}
+
+span{
+    color:  rgb(19, 125, 224) ;
+    line-height: 30px;
+    
+}
+
+.contents a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: silver;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(19, 125, 224) ;
+    background-color: transparent;
+    transition: background-color, color, border-color;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+}
+
+.contents a:hover{
+    background-color: rgb(3, 69, 131);
+    border-color: silver;
+    color: white;
+}
