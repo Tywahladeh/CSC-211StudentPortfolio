@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata form</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>BIODATA FORM</h1>
+    <fieldset>
+      <form method="post" action="" type="multipart">
+        <label for="name"> Name </label>
+        <input type="text" name="Name" placeholder="Enter your Name" required />
+        <br />
+        <label for="age"> Age </label>
+        <input type="number" name="Age" required />
+        <br />
+        <label for="Address">Address </label>
+        <input type="textarea" name="Address" required />
+        <br />
+        <label for="Phone_number"> Phone Number</label>
+        <input type="text" name="Phone_number" required />
+        <br />
+        <label for="email"> Email</label>
+        <input type="email" name="email" required />
+        <br />
+        <label for="DOB"> Date of Birth</label>
+        <input type="date" name="date_of_birth" required />
+        <br />
+        <label for="nationality">Nationality</label>
+        <select name="nationality">
+          <option name="nationality" value="Argentina">Argentina</option>
+          <option name="nationality" value="Berlin">Berlin</option>
+          <option name="nationality" value="South Korea">South Korea</option>
+          <option name="nationality" value="France">France</option>
+          <option name="nationality" value="Nigeria">Nigeria</option>
+          <option name="nationality" value="North Korea">North Korea</option>
+          <option name="nationality" value="Malawi">Malawi</option>
+        </select>
+        <br />
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="Male" /><label for="male">
+          Male</label
+        >
+        <input type="radio" name="gender" value="Female" /><label for="Female">
+          Female</label
+        >
+        <br />
+        <label for="passport"> Passport</label>
+        <input type="file" name="passport" />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

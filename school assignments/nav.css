@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  background: lightcoral;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  margin: 10px;
+  background: white;
+  border-radius: 20px;
+  outline: 20px;
+}
+
+@media (max-width: "750px") {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
