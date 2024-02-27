@@ -1,0 +1,52 @@
+    h1 {
+        width: 150;
+        height: 200;
+        background-color: rgb(204, 73, 25);
+        color: white;
+        text-decoration: wavy;
+        justify-content: center;
+        display: flex;
+    }
+    
+    body {
+        color: black;
+        background-color: ivory;
+        padding-left: 10px;
+    }
+    
+    a:hover {
+        color: red;
+        font-style: italic;
+    }
+    
+    .container {
+        margin: auto;
+        border: 5px solid red;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    #body {
+        background-image: url("NKEM PICTURES/");
+    }
+    
+    #unique {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        margin-right: 17px;
+        text-align: center;
+    }
+    
+    p {
+        margin: 10px 20px;
+        /*vertical,horizontal*/
+    }
+    
+    #name {
+        text-transform: capitalize;
+    }
+    
+    form {
+        line-height: 50px;
+    }
