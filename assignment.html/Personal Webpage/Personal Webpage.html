@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Personal Webpage/Personal Webpage.css">
+
+    <title> My personal webpage responsive</title>
+</head>
+
+<style>
+    :root {
+    --primary-color: #a855f7;
+    --primary-color-dark:#9333ea;
+    --secondary-colour:#ca8a04;
+    --text-dark:#ffffff;
+    --test-light:#6b7280;
+    --extra-light:#000000;
+    --max-width: 1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "'Poppins", sans-serif;
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 99;
+}
+
+.nav_content{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 3s;
+}
+nav .logo a:hover{
+    color: var(--primary-color-dark);
+}
+
+nav.checkbox{
+    display: none;
+}
+
+nav input{
+    display: none;
+}
+nav.checkbox i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    min-width: 160px;
+    top: 50px;
+    padding: 0%; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    width: 10px;
+    color: white;
+    background-color: black;
+
+}
+
+.submenu li a {
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.submenu-parent:hover .submenu {
+    display: block;
+}
+.submenu-parent:active .submenu{
+    display: block;
+}
+
+.submenu-parent::after {
+    content: '';
+    position: absolute; 
+    left: 0;
+    right: 0;
+    top: 72px; 
+    height: 10px; 
+    background: transparent;
+    
+}
+
+ul{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li a{
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    border-top-color: var(--secondary-colour);
+    border-bottom-color: var(--secondary-colour);
+    color: var(--secondary-colour);
+}
+
+.section {
+    background-color: var(--extra-light);
+}
+
+.section_container{
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 4rem;
+    padding-top: 40px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle{
+    letter-spacing: 2px;
+    color: var(--test-light);
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    padding: 35px;
+    text-align: left;
+}
+
+.title span {
+    font-weight: 600;
+}
+
+.description{
+    line-height: 1.5rem;
+    color: var(--test-light);
+    margin-bottom: 0.5rem;
+    margin-top: -2.5rem;
+}
+
+.action_btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.action_btns button{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.hire_me{
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.hire_me:hover{
+    background-color: var(--primary-color-dark);
+}
+
+.portfolio{
+    color: var(--primary-color);
+}
+
+.portfolio:hover{
+    background-color: var(--primary-color-dark);
+    color: #ffffff;
+}
+
+.image{
+    display: grid;
+    place-items: right;
+    margin-top: 40px;
+}
+
+.image img{
+    width: min(25rem, 90%);
+    border-radius: 100%;
+}
+.images:hover  .man{
+    bottom: 40px;
+}
+
+
+
+@media(width < 750px){
+    nav.checkbox{
+        display: block;
+    }
+
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    ul li a{
+        font-size: 1.25rem;
+    }
+
+
+    .section_container{
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image{
+        grid-area: 1/1/2/2;
+    }
+
+    .action_btns{
+        margin: auto;
+    }
+}
+
+</style>
+<body>
+    <nav>
+        <div class="nav_content">
+        <div class="logo"> <a href="#"> Joshua Samuel</a></div>
+        <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check">
+        <ul>
+        <li><a href="#"> Home </a></li>
+            <li><a href="/CV/am trying.html"> Curriculum Vitae </a></li>
+            <li><a href="/Flex gallery/Trial.html"> Image Gallery </a></li>
+            <li class="submenu-parent">
+                <a href="#">My Assignments</a>
+                <input type="checkbox" id="toggle-1"> 
+                <ul class="submenu">
+                        <li><a href="/Skype/assignment.html">Skype Clone</a></li>
+                        <li><a href="/Time-Table/Timetabe2.html"> Time Table</Table></a></li>
+                        <li><a href="/Bio data/Bio data.html">Bio Data Form</a></li>
+                        <li><a href="/Cru-Login folder/Cru login.html"> CRU login Page </a></li>
+                        <li><a href="/Discord/Discord.html"> Discord clone </a></li>
+                    </div>
+          
+        </ul>
+    </div>
+    </nav>
+<section class="section">
+    <div class="section_container">
+        <div class="content">
+            <p class="subtitle">HELLO</p>
+            <h1 class="title">
+                I'm <span> Joshua Samuel <br>a</span> Web Developer
+            </h1>
+            <p class="description">
+                Welcome to my web developer portfolio! I'm Joshua, a skilled and creative web developer with a passion for creating beautiful, responsive, and user-friendly websites. I've worked on a variety of web projects, ranging from personal blogs to loning of websites. My major goal is to become the best at what i can do. Thank you 
+            </p>
+            <div class="action_btns">
+                <button class="hire_me">Hire Me</button>
+                <button class="portfolio">Portfolio</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/Personal Webpage/Personal final.jpg" alt="Apple" height="500vh" class="man">
+        </div>
+    </div>  
+</section>
+
+</body>
+</html>

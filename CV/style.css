@@ -1,0 +1,121 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: linear-gradient(45deg, #6ab1d7, #33d9b2);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.contact-info, .about-me, .experience, .education, .skills, .footer {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #6ab1d7;
+    padding-bottom: 5px;
+}
+
+.job h3 {
+    margin-top: 0;
+}
+
+.job-duration {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: '✓';
+    color: #6ab1d7;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+/* Other styles remain the same */
+
+/* Moving Gradient Animation */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    /* Updated gradient colors and animation */
+    background: linear-gradient(-45deg, #f7ff9a, #c4fad5, #c4ebfa, #ad6769, #ffecd2, #c75c92);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Full-Page Moving Gradient Animation */
+@keyframes pageGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #d52394);
+    background-size: 400% 400%;
+    animation: pageGradient 10s ease infinite;
+    color: #333;
+}
+
+/* Rest of your CSS */
