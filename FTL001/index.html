@@ -1,0 +1,151 @@
+
+
+
+
+
+
+
+
+
+<!-- launch page markup -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Markmonitor.com</title>
+    <link rel="icon" type="images/x-icon" href="../favicon.ico"/>
+    <link rel="shortcut icon" type="images/x-icon" href="../favicon.ico"/>
+
+    <!-- ENDLIBS -->
+    <script type="text/javascript" src="/login/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/login/js/login.js?v=be444a03-fff9-43ba-b111-427a1a10bcd9"></script>
+
+    <link rel="stylesheet" type="text/css" href="/login/css/theme.css?v=be444a03-fff9-43ba-b111-427a1a10bcd9"/>
+    <link rel="stylesheet" type="text/css" href="/login/css/login.css?v=be444a03-fff9-43ba-b111-427a1a10bcd9"/>
+</head>
+
+<body>
+
+<div class="bigContainer">
+    <div id="leftBannerContainer">
+        <a href="https://www.markmonitor.com/contact-us/">
+            <img id="leftBanner" src="https://www.markmonitor.com/wp-content/uploads/2024/02/2.png"
+                 alt="Markmonitor Promotional Banner Left"/>
+        </a>
+    </div>
+
+    <div class="pageContainer">
+        <div>
+            <div id="branding" class="branding">
+                <img id="mm" class="logo" alt="Markmonitor Branding"/>
+            </div>
+
+            <!-- login screen -->
+            <form id="loginForm" class="content" name="loginForm" method="post" action="">
+                <input id="username" name="username" type="text" placeholder="Username"/>
+                <div id="usernameReq" class="requirements" style="display: none">
+                    Please fill in your username.
+                </div>
+                <input id="password" name="password" type="password" placeholder="Password"/>
+                <div id="passwordReq" class="requirements" style="display: none">
+                    Please enter your password.
+                </div>
+                <div class="buttonGroup">
+                    <button id="loginSubmit" type="submit">Login</button>
+                </div>
+            </form>
+            <!-- end login screen -->
+
+            <!-- Authenticator App modal dialog -->
+            <form id="totpForm" class="centered modal">
+                <label id="totpNumberLabel" for="totpNumber">Authenticator App Registration</label>
+                <div>Please use a TOTP* compliant Two-Factor Authentication (2FA) app to scan the below QRCode.</div>
+                <div>(Such as Microsoft Authenticator App or Google Authenticator)</div>
+                <div class="footer">*Time-based One-Time Password</div>
+                <img id="qrcodeImage" src="" alt="Authenticator App QRCode">
+                <div>
+                    <div id="qrcodeProblem">
+                        Problems reading the QRCode?&nbsp;
+                        <a href="" onclick="showToken(event);">Click here!</a>
+                    </div>
+                    <div id="tokenRevealed" style="display: none">
+                        <span id="tokenRevealedContent"></span>
+                    </div>
+                </div>
+                <input id="totpNumber" type="text" placeholder="Time Generated Security Code" autocomplete="off" />
+                <div id="totpReq" class="requirements" style="display: none">
+                    Invalid security code.
+                </div>
+                <div class="buttonGroup">
+                    <button id="totpSubmit" type="submit">Authenticate</button>
+                    <button id="totpCancel" class="cancel" onclick="return totpFormCancel();">Cancel</button>
+                </div>
+            </form>
+            <!-- end Authenticator App modal dialog -->
+
+            <!-- Two-factor authentication modal dialog -->
+            <form id="tfaForm" class="centered modal">
+                <label for="tfaNumber">Multi-Factor Authentication</label>
+                <input id="tfaNumber" type="text" placeholder="Security Code" autocomplete="off"    />
+                <div id="tfaReq" class="requirements" style="display: none">
+                    Invalid security code.
+                </div>
+                <div class="buttonGroup">
+                    <button id="tfaSubmit" type="submit">Authenticate</button>
+                    <button id="tfaCancel" class="cancel" type="button" onclick="return tfaFormCancel();">Cancel
+                    </button>
+                </div>
+            </form>
+            <!-- end Two-factor authentication modal dialog -->
+
+            <!-- Change password modal dialog -->
+            <form id="fcpForm" class="centered modal">
+                <label for="newPassword">Change Password</label>
+                <input id="newPassword" name="newPassword" type="password" placeholder="New Password"/>
+                <div id="newPasswordReq" class="requirements" style="display: none">
+                    Please enter your new password.
+                </div>
+                <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm New Password"/>
+                <div id="confirmReq" class="requirements" style="display: none">
+                    Please confirm your new password.
+                </div>
+                <div class="buttonGroup">
+                    <button id="passwordSubmit" type="submit">Change</button>
+                    <button id="passwordCancel" class="cancel" type="button" onclick="return fcpFormCancel();">Cancel
+                    </button>
+                </div>
+            </form>
+            <!-- end Change password modal dialog -->
+
+            <!-- Error container -->
+            <div id="errorContainer" class="centered">
+                <p id="errorMessage" style="display:none">Required data is missing!</p>
+            </div>
+            <!-- end Error container -->
+
+            <!-- Marketing promotion space -->
+            <div id="marketingSpace" class="marketingSpace">
+                <a href="https://www.markmonitor.com/resources/">
+                    <img id="bottomBanner" src="https://www.markmonitor.com/wp-content/uploads/2024/02/D5-Login-Page-Horizontal-Navigation.png"
+                         alt="Markmonitor Promotional Banner Bottom"/>
+                </a>
+            </div>
+            <!-- end Marketing promotion space -->
+
+            <div id="footerContainer" class="footer">
+                &copy;2022 Markmonitor, Inc.
+                <a href="https://www.markmonitor.com/legal/tc-dm.php">Terms & Conditions - Domain Management</a> |
+                <a href="https://www.markmonitor.com/legal/privacy.php">Privacy Policy</a> |
+                <a href="https://domains.markmonitor.com/whois/" target="_blank">WHOIS</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>
