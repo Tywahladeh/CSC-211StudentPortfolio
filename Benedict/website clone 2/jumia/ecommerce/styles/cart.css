@@ -1,0 +1,27 @@
+.cart{
+    text-align: center;
+}
+.cart h2{
+    font-size:xx-large;
+    color:grey;
+}
+.cart p{
+    font-size:large;
+}
+.cart a{
+    color:orange;
+
+}
+.cart button{
+    height:50px;
+    width:200px;
+    background-color:orange;
+    outline:none;
+    border:1px solid orange;
+    border-radius:4px;
+    font-size:large;
+    cursor:pointer;
+}
+.cart button:hover{
+    background-color:darkorange;
+}

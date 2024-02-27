@@ -1,0 +1,56 @@
+.new-account{
+    background-color:white;
+    margin-top:10px;
+    height:fit-content;
+    text-align:center;
+    margin-left:100px;
+    margin-right:100px;
+}
+.reg-form .names input,
+.reg-form .email-password input,
+.reg-form .phone input{
+    width:44%;
+    height:40px;
+    margin:16px 2%;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    outline:none;
+}
+.reg-form .phone input{
+    text-align:left;
+}
+
+.reg-form button,.new-account a button{
+    margin:30px auto;
+    width:70%;
+    height:40px;
+    font-size:large;
+    color:white;
+    background-color:orange;
+    border:1px solid;
+    border-radius:4px;
+    cursor:pointer;
+    outline:none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.reg-form button:hover{
+    background-color:darkorange;
+}
+.new-account .reg{
+    background-color:#40588a;
+}
+.new-account button.log{
+    width:10%;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    box-shadow:none;
+    background-color:white;
+    color:orange;
+    margin-top:10px;
+}
+.new-account button.log:hover{
+    background-color:lightgrey;
+}
