@@ -1,0 +1,129 @@
+/*.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(max-width: 600px){
+    .gallery{
+        justify-content: center;
+    }
+    .image{
+        width: 100%;
+    }
+}*/
+
+body {
+    margin: auto;
+    
+    background-color: rgb(150, 169, 169);
+   
+}
+/*.container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: grey;
+    display: flex;*/
+
+.navbar ul{
+    background-color: #333;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0x;
+}
+
+.navbar ul li a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+     background-color:#111;
+
+}
+
+.navbar ul li a{
+    display: inline;
+}
+
+@media screen and (max-width: 600px){
+    .responsive-nav ul{
+        flex-direction: column;
+    }
+}
+
+h2
+{
+color: #fff;
+text-align: center;
+font-family: fantasy;
+font-size:x-large;
+
+}
+
+.gallery {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: grey;
+    display: flex;
+}
+    .gallery>div{
+        width: 100px;
+        font-size: 25px;
+        margin: 20px;
+        background: rgb(111, 71, 255);
+        
+        color: white;
+        padding: 10px;
+   
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;*/
+}
+
+.gallery-item {
+    flex:content;
+    margin: 50px;
+    width: 10px;
+    padding: 20px;
+   ;
+    
+    
+}
+
+.gallery-item  img {
+    width: 300px;
+    height: 300px;
+    
+    padding: 10px;
+    justify-content: space-evenly;
+    
+}
+
+.caption {
+    position: center;
+    /*bottom: 0;
+    left: 0;
+    width: 50%;*/
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}

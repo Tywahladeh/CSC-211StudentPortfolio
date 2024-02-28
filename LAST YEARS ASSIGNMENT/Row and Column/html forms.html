@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata form</title>
+    
+    <!--EXAMPLE OF INTERNAL CSS
+        <style>
+        form{background: url('NEW BEE.jpg');
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: italic;
+
+        }
+    </style>-->   
+
+    <link type="text/CSS" rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+   
+    <center><div class="container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
+        Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
+    </center>
+    <center><h1>MY BIODATA FORM</h1></center>
+    <p id="unique">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
+        Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+    <fieldset>
+        <form method="post" action="" type="multipart"></form>
+        <label for="name">Name</label>
+        <input type="text" name="Name" placeholder="Enter your Name" required/><br><br>
+
+        <label for="age">Age</label>
+        <input type="number" name="Age" required/><br><br>
+
+        <label for="Address">Address</label>
+        <input type="textarea" name="Address" required/><br><br>
+
+        <label for="Phonenumber">Phone Number</label>
+        <input type="text" name="Phone_number" required/><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="Email" required/><br><br>
+
+        <label for="Dob">Date of Birth</label>
+        <input type="date" name="date_of_birth" required/><br><br>
+
+        <label for="nationality">Nationality</label>
+        <select name="Nationality">
+            <option name="Nationality" value="Argentina">Argentina</option>
+            <option name="Nationality" value="Bulgaria">Bulgaria</option>
+            <option name="Nationality" value="Canada">Canada</option>
+            <option name="Nationality" value="Nigeria">Nigeria</option>
+        </select>
+                 <br><br>
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" value="male"/><label for="male">Male</label>  
+        <input type="radio" name="Gender" value="female"/><label for="female">Female</label> 
+        <br><br>
+
+        <label for="passport">Passport</label>
+        <input type="file" name="passport"/>
+        <br><br>
+        
+        <!--<input type="submit" name="submit" value="Reister"/>-->
+        <button>Submit</button>
+
+        
+    </fieldset>
+</body>
+</html>

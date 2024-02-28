@@ -1,0 +1,399 @@
+* {
+    margin: 0px;
+    padding: 0px;
+   
+    }
+    .main{
+        width: 100%;
+        background: url(YEL.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300vh;
+    } 
+/*HEADER*/   
+    header{
+        background-color: rgb(255, 196, 3);
+        padding: 10px;
+    }
+    header p{
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    }
+
+ul h2{
+        margin-top: 20px;
+        font-size: 20px;
+        
+        color:  rgb(255, 196, 3);
+    }
+/*NAVIGATION*/ 
+.nav{
+    align-items: center;
+   
+    justify-content: center;
+    margin: auto;
+    width: 900px;    
+}   
+
+nav ul li a:hover{
+    color: rgb(75, 74, 74);
+}
+.navigate_links{
+    list-style: none;
+}
+
+
+    .navigate_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    }
+    
+    .navigate_links li a {
+    transition: all 0.3s ease-in-out 0s;
+    }
+    .navigate_links li a:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        border-radius: 50px;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        background-color: rgb(255, 191, 0);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-in-out;
+    }
+    .navigate_links li a:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+/*TELL YOUR BEST STORY*/
+.but{
+    padding-left: 200px;
+    margin-top: 30px;
+}
+h1{
+    font-family: "Montserrat regular", sans-serif;
+    padding-left: 200px;
+    font-size: 20px;
+    line-height: 60px;
+}
+.cont P, .cont li{
+    font-family: "Montserrat regular", sans-serif;
+    padding-left: 200px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+h3{
+    font-family: "Montserrat medium", sans-serif;
+    color: blue;
+    padding-left: 200px;
+    margin-top: 50px;
+    font-size: 60px;
+}
+/*FEATUIRED BY*/
+.center P {
+    margin-top: 50px;
+    font-family: "Montserrat medium", sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;}
+
+#parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-left: 200px;
+
+}
+#parent img{
+    margin-top: 40px;
+   width: auto;
+    height: 40px;
+    
+  /* padding-right: 100px;  
+   padding-left: 200px;  */
+
+     
+}
+    ul li, a, button {
+    font-family: "Montserrat regular", sans-serif;
+    font-weight: 600;
+   
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    }
+    
+   
+    
+/*SAVES PRECIOUS TIME*/
+.bunt{
+    padding-right: 200px;
+    margin-top: 250px;
+}
+.bunt button {
+    border-radius: 15px;
+    background-color: rgb(255, 196, 3);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 20px;
+    font-size: 20px;
+    float: right; 
+}
+
+.bunt button:hover {
+    background-color: rgb(66, 69, 255);
+    color: rgb(255, 255, 255);
+    }
+
+.text{
+    margin-top: 0px;
+  
+    padding-right: 0px;
+   
+}
+    
+    
+    .text ul{
+    text-align: right;
+        
+    line-height: 30px;
+    margin-left: 50px;
+    display: list-item; 
+    font-family: "Montserrat regular", sans-serif;
+    font-size: 18px;
+   
+}
+.cimg{
+    margin-top: 10px;
+    
+}
+.cimg img{
+    float: left;
+    display: flex;
+    font-size: 0px;
+    gap: 1px;
+    padding-left: 150px;
+    width: auto;
+    height: 400px;
+    shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/*IMPROVE YOUR CRAFT*/
+    .craft{
+        padding-left: 200px;
+        margin-top: 150px;
+    }
+    .craft button {
+        border-radius: 15px;
+        background-color: rgb(255, 196, 3);
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out 0s;
+        padding: 20px;
+        font-size: 20px;
+        float: left;
+    }
+    .craft button:hover{
+        background-color: blue;
+        color: white;
+    }
+
+.craft img{
+    height: 400px;
+    width: auto;
+    float: right;
+    padding-right: 200px;
+    margin-top: 10px;
+}
+
+.new{
+    margin-top: 550px;
+}
+.improove{
+    padding-left: 200px;
+    margin-top: 300px;
+}
+.improove button {
+    border-radius: 15px;
+    background-color: rgb(255, 196, 3);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 20px;
+    font-size: 20px;
+    float: left;
+}
+.improove button:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.improove img{
+height: 400px;
+width: auto;
+float: right;
+padding-right: 200px;
+margin-top: 10px;
+}
+
+.num_1{
+    padding-left: 200px;
+    margin-top: 100px;
+}
+.num_1, li{
+font-family: "Montserrat regular", sans-serif;
+font-size: 20px;
+line-height: 40px;
+}
+
+
+.num{
+    padding-left: 200px;
+    margin-top: 70px;
+}
+.num , li{
+font-family: "Montserrat regular", sans-serif;
+font-size: 20px;
+line-height: 40px;
+}
+
+
+/*OTHERS*/
+nav ul li  button {
+    padding: 9px 12px;
+    border-radius: 5px;
+    background-color: rgb(89, 61, 248);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 18px;
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    .navigate_links li a:hover {
+    color: rgb(71, 71, 71);
+    
+    }
+    
+    button:hover {
+    background-color: rgb(255, 208, 0);
+    color: black;
+    }
+iframe{
+    float: right;
+    margin-right: 200px;
+}
+/*video{
+    height: 300px;
+    width: 600px;
+    float: right;
+    padding-right: 200px;
+    margin-top: 10px;
+}*/
+
+/*COMMUNITY*/
+.comm{
+    
+    margin-top: 600px;
+}
+.comm button {
+    border-radius: 15px;
+    background-color: rgb(255, 208, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+    margin-left: 200px;
+}
+
+.comm ul{
+margin-left: 200px;
+
+}
+
+.comm ul li{
+    text-align: left;
+    line-height: 20px;
+    font-family: "Montserrat regular", sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.comm button:hover {
+    background-color: rgb(66, 69, 255);
+    color: rgb(255, 255, 255);
+    }
+
+.text{
+    margin-top: 150px;
+    float: left;
+    }
+    
+    .text li{
+    text-align: left;
+    padding-right: 40px;
+    padding-left: 20px;
+    line-height: 40px;
+    display: list-item; list-style-type: disc;
+    font-family: "Montserrat regular", sans-serif;
+    font-size: 18px;
+    text-wrap: nowrap;
+    margin-top: -20px;
+}
+/*.cimg{
+    margin-top: 10px;
+    
+}*/
+
+.comm img{
+    float: right;
+    width: auto;
+    height: 500px;
+    padding-right: 200px;
+    margin-top: -100px;
+    shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sign button{
+    margin-top: 300px;
+    align-items: center;
+}
+
+.image-round{
+    margin-top: 300px;
+    
+  
+}
+
+.image-round img{
+    width: auto;
+    height: 300px;
+    padding-left: 300px;
+}
+
+.image-round p{
+    font-size: 20px;
+   float: right;
+   padding-right: 350px;
+   padding-top: 100px;
+}
