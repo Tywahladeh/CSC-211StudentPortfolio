@@ -1,0 +1,50 @@
+*{margin-top: 5px;
+    margin: 10px;
+    color: black;
+
+}
+h1{font-size: Regular;}
+input{width: 100px; height: 20px;
+background-image: url('/10-1.jpg');}
+
+button{background: rgb(208, 1, 1);
+    margin: 3px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.container{margin: 20px;
+    font-size:medium;
+border: 1px solid;
+padding: 10px;
+}
+
+/*properties of margin*/
+
+#unique{margin-top: 10px;
+    margin: 20px;
+    border: 1px solid;
+    padding: 10px;
+}
+input[type="text"]{
+    width: 50%;
+    line-height: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+[email]{
+    margin: 20px;
+    border: 1px solid;
+    padding: 10px;
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color:coral;
+}
+
+h1{
+    margin: 10px 5px 15px 20px; /*t r b l*/
+}
