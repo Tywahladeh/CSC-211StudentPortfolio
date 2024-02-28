@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ background: black; 
+ color: white;
+ margin: 30px;
+}
+
+#Try{
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px whitesmoke;
+    color: white;
+    margin-left: 5%;
+    flex-grow: 3;
+}
+
+
+.Glory{
+    flex-grow: 2;
+    transition: all 1s;
+    padding: 7px;
+    display: inline;
+    text-align: center;
+    border-radius: 6px;
+    justify-content: space-evenly;
+    margin-right: 15px;
+}
+
+.Glory:hover{
+    background: gold; 
+    color: black; 
+    transform: scale( 1.1);
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+body{
+    background: black; 
+    color: white;
+}
+
+p{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px whitesmoke;
+    text-align: center;
+}
+
+.Gen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.A{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px;
+    text-align: center;
+    width: 125px;
+    height: 110px;
+    background: linear-gradient(red,gold,red);
+}

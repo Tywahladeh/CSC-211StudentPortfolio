@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.card1{
+    float: left;
+    margin-left: 1%;
+    clear: both;
+    margin-top: 30px;
+    position: relative;
+} 
+
+.text{
+    margin-top: -350px ;
+    width: 45%;
+    float: right;
+    margin-right: 5%;
+    font-size: 1.2rem;
+}
+
+img{
+    width: 37%;
+    height: 37%;
+    background: none;
+    margin-left: 30px;
+    margin-top: 40px ;
+    bottom: 2%;
+}
+
+.card1 .card1-txt{
+    position: absolute;
+    bottom: 2px;
+    left: 20px;
+    margin-left: 50px;
+    color: white;
+}
+
+.card1-txt h2{
+    font-size: 35px;
+}
+
+.card1-txt p{
+    font-size: 25px;
+}

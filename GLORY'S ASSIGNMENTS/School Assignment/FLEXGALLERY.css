@@ -1,0 +1,15 @@
+input{
+  width: 170px;
+  height: 35px;
+  border-radius: 12px;
+  border-width: 3px;
+  border-color: black;
+  margin-top: 10px;
+  margin-left: 1050px;
+  background: radial-gradient(lightblue, aqua, lightblue);
+ }
+
+input:hover{
+  background: whitesmoke;
+  color: black;
+ }

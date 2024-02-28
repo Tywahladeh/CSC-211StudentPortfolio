@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+    list-style: none;
+}
+
+.img{
+        margin-left: 90px;
+        margin-top: 170px;
+        width: 550px;
+        height: 310px;
+        float: left;
+        clear: both;
+}
+
+.text{
+ float: right;
+ margin-top: 90px;
+ margin-left: 0px;
+ margin-right: 50px;
+}
+
+.text h1{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    font-size: 3.95rem;
+    word-wrap: break-word;
+    text-overflow: unset;
+    font-weight: bolder;
+}
+
+.text h3{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 40px;
+    font-size: 1.9rem;
+    word-wrap: break-word;
+    text-overflow: unset;
+    font-weight: bolder;
+}
+
+.text h4{
+    margin-top: 60px;
+}
+
+.p1{
+    margin-left: 127px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p2{
+    font-size: 11.7px;
+    width: 330px;
+}
+
+.p2 a{
+    color:  #348ceb;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+a:hover{
+    text-decoration-line: underline;
+}
+
+.sign1, .sign2, .sign3, .sign4{
+    width: 285px;
+    height: 39px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: silver silver silver;
+    font-size: 0.95rem;
+}
+
+.sign1{
+    margin-top: 30px;
+    background-color: white;
+    font-weight: 400;
+}
+
+.sign1:hover{
+    background-color: rgb(234, 245, 244);
+}
+
+.sign2{
+    margin-top: 10px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.sign2:hover{
+    background-color: rgba(206, 199, 199, 0.5);
+}
+
+.sign3{
+    background-color: #348ceb;
+    color: white;
+}
+
+.sign3:hover{
+
+}
+
+.sign4{
+    background-color: white;
+margin-top: 22px;
+color: cornflowerblue;
+font-weight: 700;
+margin-bottom: 40px;
+}
+
+.sign4:hover{
+background-color: rgb(234, 245, 244);
+}
+
+.foot{
+    display: flex;
+     align-items: center;
+    width: 97%;
+    height:37px;
+    justify-content: space-around;
+    margin-left: 17px;
+}
+  
+.foot, .foot2 li{
+    margin-right: 25px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.foot a{
+    color: rgba(88, 86, 86, 0.801);
+}
+
+.foot2 li{
+    margin-left:18px;
+}
+    
+    .foot2{width:100%;
+        list-style-type: none;
+        display: flex;
+         align-items: center;
+        justify-content: center;
+     margin-bottom: 10px;  
+    }
+
+    .foot2 a{
+        color: rgba(88, 86, 86, 0.801);
+    }
+
+    .corp{
+        color: rgba(88, 86, 86, 0.801);
+    }
