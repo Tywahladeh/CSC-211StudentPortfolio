@@ -1,0 +1,53 @@
+thead{
+    padding: 7px;
+    background-color: plum;
+    margin: 20px auto;
+}
+
+td:hover{
+    background-color: white;
+    color: plum;
+}
+
+tbody{
+    border-style: solid ;
+                border-width: 3px;
+                border-color: black;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 3px;
+                margin: 20px auto;
+                background-color: rgba(186, 183, 183, 0.854);
+}
+
+table{
+    width: 40%;
+    align-content: center;
+    justify-content: center;
+}
+
+tfoot{
+    padding: 7px;
+    background-color: plum;
+    margin: 20px auto;
+    border-width: 3px;
+    border-color: black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+input{
+    width: 170px;
+    height: 35px;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: black;
+    margin-top: 100px;
+    margin-left: 365px;
+    background-color: rgba(186, 183, 183, 0.854);
+}
+
+input:hover{
+    background-color: plum;
+    color: white;
+}

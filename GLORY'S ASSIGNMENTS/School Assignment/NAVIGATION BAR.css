@@ -1,0 +1,69 @@
+.NavBar{
+    display: flex; 
+    background: linear-gradient(aqua, lightblue,aqua);
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: double; 
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border:groove 5px black;  
+    flex-shrink: 0px;
+    width: 100%;
+    height: 70px;
+    line-height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media(max-width:750px){
+    .NavBar{
+    display: flex; 
+    flex-direction: column;
+           }
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 2ps 2px 4px;
+    color: black;
+    margin-left: 5%;
+    flex-grow: 3;
+}
+
+#bar{
+    order: 6;
+    flex-grow: 2;
+}
+
+#bar1{
+    order: 8;
+    flex-grow: 2;
+}
+
+#bar2{
+    order: 10;
+    flex-grow: 2;
+}
+
+#bar3{
+    order: 12;
+    flex-grow: 2;
+}
