@@ -1,0 +1,51 @@
+.calculator{
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fade-in 0.5s forwards;
+  transition: opacity 0.5s;
+}
+
+.calculator.fade-in{
+  opacity: 1;
+}
+
+input, select, button{
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover{
+  background-color: #45a049;
+}
+
+.result{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
