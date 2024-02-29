@@ -1,0 +1,169 @@
+img {
+    margin-left: 450px;
+}
+
+
+#t {
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 540;
+}
+
+#y {
+    margin-bottom: -10px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.vv {
+    color: #64b1a4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h5 {
+    color: #252e2d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+button {
+    background-color: #008069;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+}
+
+.hh {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.bb {
+
+    margin-left: 542px;
+    margin-top: -69px;
+
+
+}
+
+.nn {
+    width: 600px;
+    border-top: 100px red;
+}
+
+.one {
+    border: 2px solid #00a884;
+    background-color: #00a884;
+    color: solid white;
+    height: 150px;
+    width: auto;
+    position: relative;
+    top: -9px;
+
+}
+
+.innerone {
+
+    z-index: 10;
+    border: 2px double transparent;
+    border-style: groove;
+    height: 800px;
+    width: 700px;
+    position: absolute;
+    margin-left: 400px;
+    margin-right: 500px;
+    top: 90px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.two {
+    margin-top: 30px;
+    border: 1px #e1e5e8;
+    border-radius: 2px;
+    height: 75px;
+    width: 650px;
+    margin-left: 25px;
+    margin-right: 80px;
+    border-style: inherit;
+    z-index: 2;
+}
+
+.uu {
+    margin-left: 10px;
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+
+
+
+}
+
+.three {
+    margin-top: -65px;
+    margin-left: 80px;
+    width: 500px;
+    height: 70px;
+
+}
+
+.four {
+    color: rgb(65, 85, 95);
+    margin-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.five {
+    margin-left: 40px;
+}
+
+.six {
+    margin-top: -220px;
+
+}
+
+.seven {
+    margin-left: 50px;
+    color: #64b1a4;
+}
+
+ol {
+    color: rgb(65, 85, 95);
+}
+
+.eight {
+    background-color: #f9f9fa;
+    height: 350px;
+}
+
+.eightinner {
+    color: rgb(125, 136, 142);
+    padding-top: 10px;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+.tuu {
+    color: rgb(125, 136, 142);
+    padding-top: 30px;
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+video {
+    margin-top: 20px;
+    margin-left: 145px;
+    height: 220px;
+}
