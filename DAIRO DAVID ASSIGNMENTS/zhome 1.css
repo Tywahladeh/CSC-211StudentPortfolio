@@ -1,0 +1,94 @@
+body{
+background: linear-gradient(rgb(223, 160, 193),white)
+}
+body:hover{
+  background: linear-gradient(white,rgb(244, 206, 142),rgb(248, 222, 222),rgb(55, 17, 226))
+}
+.bod2{
+border: 0.2rem solid black;
+  border-radius: 50px;
+  border-width: 3px;
+  width: 400px;
+  height:200px;
+}
+.bod2:hover{
+  border: 0.2rem solid green;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  text-decoration:none;
+  cursor: pointer;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+}
+.pp {
+  text-align: right;
+  text-transform: capitalize;
+  word-spacing: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:large;
+  color:rgb(237, 230, 231);
+}
+.big-big{
+background:white;
+outline style: solid;
+border: 0.2rem solid black;
+border-radius:84px;
+border-width:3px;
+color:crimson;
+text-transform: uppercase;
+cursor: pointer;
+text-align: center;
+}
+.big-big:hover{
+font-size:large;
+color:rgba(4, 27, 238, 0.882);
+border: 0.2rem solid rgba(241, 6, 6, 0.786);
+border-width: 3px;
+}
+button {
+  background:rgba(7, 3, 220, 0.877);
+  font-size: 30px;
+  color:rgb(238, 13, 13);
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+.please{
+ color:rgb(56, 44, 44);
+ text-decoration:underline;
+ font-weight: bold;
+ text-decoration-color:black;
+ text-transform:lowercase;
+ text-align:right;
+}
+.cont{
+text-decoration: underline;
+}
+.serv{
+text-decoration: underline;
+}
+.one {
+background:rgb(231, 38, 47);
+color:white;
+}
+.pop{
+color:white;
+background:blue;
+} 
+.one:hover {
+  background: black;
+  color: white;
+}
+.pop {
+  color: white;
+  background: black;
+}
+.social-icon {
+font-size: 3rem;
+color: blue;
+}

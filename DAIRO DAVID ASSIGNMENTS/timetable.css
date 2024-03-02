@@ -1,0 +1,26 @@
+h1{ font-size: regular; color:rgb(215, 16, 16);
+}
+
+body{
+ width:90px;
+ color:blue;
+ height:80px;
+ background: rgba(2, 16, 76, 0.327);
+
+}
+input{
+ width:200px; height: 50px; 
+}
+ option{
+  color:rgba(174, 12, 106, 0.813);
+ }
+
+
+
+
+
+
+
+
+
+
