@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata form</title>
+</head>
+<body>
+<link rel="stylesheet" href="biodata.css">
+<h1><center><u>BIO DATA FORM</u></center></h1>
+<div class="bio">
+<h2>
+   <form method="post" action="" type="multipart">
+    <label for="name">Name</label>
+    <input type="text" name="Name" placeholder="Enter your name" required /><br><br>
+    <label for="age">Age</label>
+    <input Type="number" name="Age" required /><br><br>
+    <label for="Address">Address</label>
+    <input type="textarea" name="Address" required /><br><br>
+    <label for="phone number"> Phone number</label>
+    <input type="text" name="phone_number" required /><br><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" required /><br><br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="date_of_birth" required /><br><br>
+    <label for="nationality">Nationality</label>
+    <select name="nationality">
+     <option name="nationality" value="Argentina">Argentina</option>
+     <option name="nationality" value="Berlin">Berlin</option>
+     <option name="nationality" value="canada">Canada</option>
+     <option name="nationality" value="Sweden">Sweden</option>
+     <option name="nationality" value="India">India</option>
+     <option name="nationality" value="SouthAfrica">South Africa</option>
+     <option name="nationality" value="Nigeria">Nigeria</option>
+    </select>
+    <br><br>
+
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" value="male" /> <label for male="male">Male</label>
+    <input type="radio" name="gender" value="female" /> <label for="female">Female</label>
+    <br><br>
+
+    <label for="passport">Passport</label>
+    <input type="file" name="passport" />
+    <br><br>
+
+    <input type="submit" name="submit" value="Register" /></form>
+</h2>
+</div>
+ </body>
+</html>
