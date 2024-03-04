@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="biodata.css">
+    <title>Biodata form</title>
+</head>
+<body>
+    <h1>Biodata form</h1>
+    <fieldset>
+        <form method="post" action="" type="multipart">
+            <label for="name">Name</label>
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <label for ="age">Age</label>
+            <input type="number" name="Age" required, value=""/>
+            <label for="address">Address</label>
+            <input type="textarea" name="Address" required/>
+            <label for="phone_number">Phone Number</label>
+            <input type="text" name="phone_number" required/>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required/>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="date_of_birth" required/>
+            <label for="nationality">Nationality</label>
+            <select name="nationality">
+                <option name="nationality" value="Argentina">Argentina</option>
+                <option name="nationality" value="Spain">Spain</option>
+                <option name="nationality" value="Nigeria">Nigeria</option>
+                <option name="nationality" value="Germany">Germany</option>
+            </select>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male"/><label for="male">Male</label>
+            <input type="radio" name="gender" value="female"/><label for="female">Female</label>
+            <label for="passport">Passport</label>
+            <input type="file" name="passport"/>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>
