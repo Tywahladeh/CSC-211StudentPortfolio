@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html ng-app="pageApp">
+
+
+    
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Book Distribution and Publisher Services | National Book Network </title>
+
+	<link rel="icon" href="/static/images/ico.png" type="image/x-icon" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700,900' rel='stylesheet' type='text/css'>
+
+
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="/static/css/jquery.cookiebar.css" rel="stylesheet" type="text/css" />
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="/static/css/grayscale.css" rel="stylesheet" type="text/css" />
+	<script src="/static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<link href="/static/scripts/unslider/dist/css/unslider.css" rel="stylesheet" type="text/css" />
+<link href="/static/scripts/unslider/dist/css/unslider-dots.css" rel="stylesheet" type="text/css" />
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  	<div class="vertical-alignment-helper">
+		  	<div class="modal-dialog vertical-align-center loginPanel" role="document">
+			  	<div class="modal-content">
+					<div class="modal-header">
+				  		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  		<h4 id="myModalLabel">Log In</h4>
+					</div>
+					<div class="modal-body">
+				  		
+				  		<div class="login" ng-controller="loginController">
+					  		<form action="/login" method="post">
+					  			<p class="message" ng-bind="message" ng-class="{good: status === 'good', bad: status === 'bad'}"></p>
+					  			<input class="form-control" type="text" name="email" placeholder="Email" ng-model="username">
+								<input class="form-control" type="password" name="password" placeholder="Password" ng-model="password">
+								<p>Don't have an account?  <a href="#" class="login">Sign Up</a></p>
+								<button class="btn btn-default" type="button" accesskey="Enter" ng-click="submit()">Log In</button>
+							</form>
+				  		</div>
+				  		<div class="signup" ng-controller="signupController">
+							<form class="form-horizontal" action="/join" method="post">
+								<p class="message" ng-bind="message"></p>
+								<h5>New Account Signup</h5>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">First Name</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" name="fname" placeholder="First Name" ng-model="fname">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-sm-3 control-label">Last Name</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" name="lname" placeholder="Last Name" ng-model="lname">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">Company</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" name="company" placeholder="Company" ng-model="company">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">eMail</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="text" name="email" placeholder="Email" ng-model="email">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">Password</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="password" name="password" placeholder="Password" ng-model="password">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="control-label col-sm-3">Confirm Password</label>
+									<div class="col-sm-9">
+										<input class="form-control" type="password" name="cpassword" placeholder="Confirm Password" ng-model="cpassword">
+									</div>
+								</div>
+								<p>Already have an account?  <a href="#" class="signup">Log In</a></p>
+								<button class="btn btn-default" type="button" accesskey="Enter" ng-click="submit()">Sign Up</button>
+							</form>
+				  		</div>
+				  		
+				  	</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+    
+<nav id="nav-main" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/"><img src="/static/images/NBN3c.png"/></a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<!-- Menu  -->
+		<div class="collapse navbar-collapse navbar-main-collapse" id="navbar">
+			<ul class="nav navbar-nav main-menu">
+				<li class="top dropdown brand desktop">
+					<a class="navbar-brand" href="/"><img src="/static/images/NBN3c.png"/></a>
+				</li>
+				<li class="top dropdown">
+					<a role="button" aria-expanded="false" href="/">Home</a>
+				</li>
+
+				<li class="top dropdown active">
+
+					<a class="dropdown-toggle active desktop" data-toggle="dropdown" aria-expanded="false" href="/about" onclick="window.location.href = '/about'">About NBN</a>
+					<a class="dropdown-toggle active mobile" data-toggle="dropdown" aria-expanded="false" href="/about">About NBN</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="/about">About Us</a></li>
+						<li><a href="/about/sales">Sales Services</a></li>
+						<li><a href="/about/marketing">Marketing Services</a></li>
+						<li><a href="/about/operations">Operations</a></li>
+					</ul>
+				</li>
+
+				<li class="top dropdown">
+
+					<a class="dropdown-toggle active desktop" data-toggle="dropdown" role="button" aria-expanded="false" href="/publishers" onclick="window.location.href = '/publishers'">For NBN Publishers</a>
+					<a class="dropdown-toggle active mobile" data-toggle="dropdown" role="button" aria-expanded="false" href="/publishers">For NBN Publishers</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="/publishers#calendar">Schedules &amp; Deadlines</a></li>
+						<li>
+							
+							<a data-toggle="modal" data-target="#loginModal">Publisher Login</a>
+							
+						</li>
+						<li><a href="/publishers#portal">Publisher Portal</a></li>
+						<li><a href="/publishers#fusion">Fusion Digital and Print-On-Demand</a></li>
+						<li><a href="/books">Title Search</a></li>
+					</ul>
+				</li>
+
+
+				<li class="top dropdown">
+
+					<a class="dropdown-toggle active desktop" role="button" aria-expanded="false">For Booksellers</a>
+					<a class="dropdown-toggle active mobile" data-toggle="dropdown" role="button" aria-expanded="false">For Booksellers</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="/booksellers/publishers">Our Publishers</a></li>
+						<li><a href="/books">Title Search</a></li>
+						<li><a href="/booksellers/find-your-rep">Locate Your Rep</a></li>
+						<li><a href="/booksellers/credit-application">Credit Application</a></li>
+						<li><a href="/booksellers/catalogs">Catalogs</a></li>
+						<li><a href="https://www.edelweiss.plus/" target="_blank">Edelweiss Catalog</a></li>
+					</ul>
+				</li>
+
+
+				<li class="top dropdown">
+
+					<a class="dropdown-toggle active desktop" data-toggle="dropdown" role="button" aria-expanded="false" href="/prospective" onclick="window.location.href = '/prospective'">Prospective Publishers</a>
+					<a class="dropdown-toggle active mobile" data-toggle="dropdown" role="button" aria-expanded="false" href="/prospective">Prospective Publishers</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="/prospective#why-nbn">Why NBN?</a></li>
+						<li><a href="/prospective#what-we-look-for">What We Look For In Publishers</a></li>
+						<li><a href="/prospective#submissions">Submission Package</a></li>
+						<li><a href="/prospective#top-reasons-to-join-nbn">Top Reasons to Join NBN</a></li>
+					</ul>
+				</li>
+
+
+				<li class="top dropdown">
+					<a role="button" aria-expanded="false" href="/contact">Contact Us</a>
+				</li>
+
+
+
+
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right" style="display:none;">
+				<li class="social-link"><button class="btn" data-toggle="modal" data-target="#loginModal">Publisher Login</button></li>
+			</ul>
+			
+		</div><!--/.nav-collapse -->
+	</div>
+
+</nav>
+<!-- End of main menu -->
+
+
+
+
+<!-- landing page from http://startbootstrap.com -->
+<!-- inline css for dynamic image selection in CMS -->
+<header class="intro" style="background-image: url('/static/images/homeBanner.jpg');background-size:cover;">
+<div class="intro-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <img src="/static/images/NBN3c.png" alt="NBN International" />
+
+            </div>
+        </div>
+    </div>
+    <div class="intro-text">National Book Network is an independent, full-service sales, marketing, and distribution company serving book publishers from around the world.</div>
+</div>
+
+</header>
+
+<!-- End of landing page -->
+
+<!-- Page content -->
+<div class="row-flow light-bg">
+
+
+
+    <div class="container homepage-section">
+        <div class="row">
+            <div class="col-sm-12 row-text">
+                <div class="content text">
+                    <a class="anchor" id="a2" name="a2"></a>
+                    <h3>News and Deadlines <i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+                    <!-- REMOVED DUE TO REDUNDANT <h3>News Breaking Now</h3> -->
+                    <div class="newsitems">
+                    
+                    <div class="article">
+                        <h4></h4>
+                        <p><p>The <a href="/publishers#calendar">Spring 2023 and Fall 2023</a> schedules are now available.</p><p><a href="https://bisg.org/page/BISACEdition">BISAC</a> codes have been updated. </p></p>
+                    </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container homepage-section">
+        <div class="row">
+          <div class="col-sm-12 row-text">
+            <a class="anchor" id="a3" name="a3"></a>
+            <h3>Featured Publishers <i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+            <div class="content text">
+              <div class="banner">
+                <ul>
+                  
+                  <li>
+                    <div class="article">
+                      <!-- <div class="mugshot-wrapper">
+                          <div class="mugshot-sq" style="background-image: url('/static/images/publishers/DurvileUpRoute.jpg')"></div>
+                      </div>
+                      <h4><a href="https://durville.com/">Durvile &amp; UpRoute Books</a></h4>
+                      <p></p>
+                      <p>Durvile & UpRoute Books is a small-but-mighty indie press that publishes books by authors who have the foresight to bring new knowledge and wisdom to the world. The Durvile imprint publishes the True Cases series and fascinating biographies, and the UpRoute imprint focuses on the Spirit of Nature Indigenous series, the Every River Lit series, and other brave artistic and cultural ventures.</p> -->
+
+                      <img class="coverimg" src="/static/images/publishers/DurvileUpRoute.jpg" />
+                      <h4><a href="https://durville.com/">Durvile &amp; UpRoute Books</a></h4>
+                      <p></p>
+                      <p><p>Durvile & UpRoute Books is a small-but-mighty indie press that publishes books by authors who have the foresight to bring new knowledge and wisdom to the world. The Durvile imprint publishes the True Cases series and fascinating biographies, and the UpRoute imprint focuses on the Spirit of Nature Indigenous series, the Every River Lit series, and other brave artistic and cultural ventures.</p></p>
+
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="article">
+                      <!-- <div class="mugshot-wrapper">
+                          <div class="mugshot-sq" style="background-image: url('/static/images/publishers/HelenExley.jpg')"></div>
+                      </div>
+                      <h4><a href="https://www.helenexley.com">Helen Exley London</a></h4>
+                      <p></p>
+                      <p>Helen Exley® London, is an independent Giftbook Publisher that was conceived by Helen Exley and her husband Richard in 1976. Helen has collected a vast body of over half a million beautiful, thoughtful, witty or wise quotations throughout her life. Their books have sold in over forty languages, including Icelandic, Welsh, Faroese, Mongolian, Albanian, Lithuanian, Japanese, Arabic and Chinese.</p> -->
+
+                      <img class="coverimg" src="/static/images/publishers/HelenExley.jpg" />
+                      <h4><a href="https://www.helenexley.com">Helen Exley London</a></h4>
+                      <p></p>
+                      <p><p>Helen Exley® London, is an independent Giftbook Publisher that was conceived by Helen Exley and her husband Richard in 1976. Helen has collected a vast body of over half a million beautiful, thoughtful, witty or wise quotations throughout her life. Their books have sold in over forty languages, including Icelandic, Welsh, Faroese, Mongolian, Albanian, Lithuanian, Japanese, Arabic and Chinese.</p></p>
+
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="article">
+                      <!-- <div class="mugshot-wrapper">
+                          <div class="mugshot-sq" style="background-image: url('/static/images/publishers/KalaniotBooks.jpg')"></div>
+                      </div>
+                      <h4><a href="http://kalaniotbooks.com">Kalaniot Books</a></h4>
+                      <p></p>
+                      <p>The mission of Kalaniot Books is to help young children and their families explore the diverse mosaic of Jewish culture and history. Their exciting picture books entertain, educate, and inspire engagement with this storied tradition. The name of their company, Kalaniot Books, comes from the bright red wild poppies or “kalaniot” that color the springtime hillsides of Israel. Like these brilliant wildflowers, their books will make Judaism a vibrant part of children’s lives.</p> -->
+
+                      <img class="coverimg" src="/static/images/publishers/KalaniotBooks.jpg" />
+                      <h4><a href="http://kalaniotbooks.com">Kalaniot Books</a></h4>
+                      <p></p>
+                      <p><p>The mission of Kalaniot Books is to help young children and their families explore the diverse mosaic of Jewish culture and history. Their exciting picture books entertain, educate, and inspire engagement with this storied tradition. The name of their company, Kalaniot Books, comes from the bright red wild poppies or “kalaniot” that color the springtime hillsides of Israel. Like these brilliant wildflowers, their books will make Judaism a vibrant part of children’s lives.</p></p>
+
+                    </div>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="container homepage-section">
+        <div class="row">
+            <div class="col-sm-12 row-text">
+              <a class="anchor" id="a1" name="a1"></a>
+              <h3>Featured Books <i class="fa fa-angle-double-right" aria-hidden="true"></i></h3>
+                <div class="content text">
+                    <div class="banner">
+                        <ul>
+                            
+                            <li>
+                                <img class="coverimg" src="https://rowman.com/L/19/384/9781938469732.jpg" />
+                                <h4><a href="/book/9781938469732-hooray-for-craft-beer-">Hooray for Craft Beer!</a></h4>
+                                <p>Brewers Publications</p>
+                                <p><p style="Microsoft Sans Serif&quot;; ">Using wit and humor and 100% illustrations, <span style="font-style: italic;">Hooray for Craft Beer! is an entertaining and informative journey through the history and world of craft beer. Readers will explore every aspect of beer from the ingredients and brewing process to glassware and how to taste beer, as they embark on a whirlwind trip around the world to discover the origin of favorite beer styles. <span style="font-style: italic;">Hooray for Craft Beer! is a simple, easy-to-read guide to learning featuring delightful illustrations. </p></p>
+
+                            </li>
+                            
+                            <li>
+                                <img class="coverimg" src="https://rowman.com/L/16/440/9781644032299.jpg" />
+                                <h4><a href="/book/9781644032299-clay-succulent-garden">Clay Succulent Garden</a></h4>
+                                <p>C&amp;T Publishing / Stash Books</p>
+                                <p><p>Lacking a green thumb? There's no need to worry when you can create your own everlasting succulents with versatile air-dry clay. Designs are included for over 25 popular succulent species, such as sedum, echeveria, and haworthia, and unique plants like cacti, air plants, and the Venus flytrap.</p></p>
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outro-text"></div>
+    <!-- <h3 style="text-align:center;margin-bottom:32px;">Check out our other <a href="/booksellers/publishers">publishing partners</a></h3> -->
+    <!-- LEFT FOR REFERENCE <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 full col-sm-push-6 bio-col title">
+                <div class="content right">
+                    <div class="content-middle">
+                        <a class="anchor" id="a@(row.Id)" name="a@(row.Id)"></a>
+                        <div class="mugshot-wrapper">
+                            <div class="mugshot" style="background-image: url('/static/images/portraits/2.JPG')"></div>
+                        </div>
+                        <div class="info">
+                            <h3>Bob Loblaw</h3>
+                            <p>Lawyer</p>
+                            <p>bob@loblawslawblog.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-sm-pull-6  bio-col text">
+                <div class="content">
+                    Quisque a vulputate nibh. Ut suscipit a urna vitae dignissim. Suspendisse scelerisque augue at nisi gravida rhoncus.
+                </div>
+            </div>
+
+         </div>
+    </div> -->
+
+    <!-- REMOVED FOR NOW <div class="container">
+        <div class="row">
+            <div class="col-sm-12 row-text">
+                <div class="content text">
+                    <p>
+                        Proin facilisis consectetur luctus. Mauris non nibh libero. Fusce in velit diam. Mauris nec justo cursus, vulputate neque id, faucibus felis. Nulla facilisi. Donec faucibus volutpat nisl, non blandit urna volutpat ut. Cras eleifend sapien et velit cursus sagittis laoreet sit amet felis. Mauris ac nulla augue. Praesent vestibulum sed ipsum id sagittis. Maecenas vitae lectus facilisis, posuere risus ac, condimentum ex. Donec a rhoncus sem. Praesent blandit orci ligula, nec varius massa porta sit amet. In vel varius neque. Vivamus semper dignissim felis, at semper ligula tempus vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin dapibus dolor at commodo sagittis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>
+
+
+<!-- End of page content -->
+
+
+
+    
+<!-- Footer -->
+<div class="container-fluid">
+	<div class="row footer">
+		<div class="col-sm-4 full">
+			<div class="content">
+				<img src="/static/images/NBNLogo_BW.png" style="display:inline-block;height:65px;" />
+				<div>
+					<strong>National Book Network</strong><br/>
+					4501 Forbes Boulevard, Suite 200<br/>
+					Lanham, MD 20706<br/>
+					TEL 301.459.3366
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 full">
+			<div class="content" style="text-align:center;">
+				<div style="margin-bottom:16px; padding-left:2px;">
+					National Book Network is a part of the <span style="display:inline-block;">Rowman &amp; Littlefield</span> Group of companies
+				</div>
+				<a href="https://rowman.com/"><img src="/static/images/rlpg.png" style="display:inline-block; height:40px;" /></a>
+				<!--<a href="http://nbninternational.com/"><img src="/static/images/nbn_long_white.png" style="display:inline-block; height:60px;" /></a>-->
+			</div>
+		</div>
+		<div class="col-sm-4 full">
+			<div class="content">
+				<div class="copyright">
+					Copyright © 2018<br />
+					<a href="/static/docx/NBNPrivacyPolicy.docx">Privacy Policy | Terms of Use</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of footer -->
+
+
+
+
+    
+<script src="/static/scripts/jquery-1.10.2.js"></script>
+<script src="/static/scripts/jquery.easing.min.js"></script>
+<script src="/static/scripts/bootstrap.min.js"></script>
+<script src="/static/scripts/jquery.cookiebar.min.js"></script>
+<script src="/static/scripts/angular.min.js"></script>
+<script src="/static/scripts/angular-sanitize.min.js"></script>
+<script src="/static/scripts/grayscale.js"></script>
+<script src="/static/scripts/main.js"></script>
+<script src="/static/scripts/app.js"></script>
+<!--<script src="~/Assets/nbni/scripts/nbni.libs.min.js"></script>-->
+<!-- pop to comply with EU cookie laws -->
+<script type="text/javascript">
+	$(document).ready(function () {
+		$.cookieBar({
+			message: 'We use cookies to see how many people visit our site',
+			bottom: true,
+			fixed: true,
+			element: 'body'
+		});
+	});
+</script>
+
+    <script src="/static/scripts/unslider/dist/js/unslider-min.js"></script>
+    <script>$(function() { $('.banner').unslider({
+            infinite: true,
+            autoplay: true,
+            delay: 7000,
+            speed: 500,
+            arrows: {
+              prev: '<a class="unslider-arrow prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>',
+              next: '<a class="unslider-arrow next"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>'
+            }
+
+        }) })</script>
+
+
+</body>
+</html>
