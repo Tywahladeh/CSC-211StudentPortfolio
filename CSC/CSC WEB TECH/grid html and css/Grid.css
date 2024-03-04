@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 30% 70%;
+    background: url(bg22.jpg);
+    margin: 10px;
+    height: 80vh;  
+    background-size: cover;
+}
+.container > div{
+    margin: 10px;
+    padding: 5px;
+    background: lightblue;
+}
+#grid-term{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
