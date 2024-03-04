@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #fff;
+}
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+.main-header {
+  width: 100%;
+  min-width: 1150px;
+  height: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+}
+.logo {
+  width: 124px;
+  height: 70px;
+  float: left;
+  background: transparent
+    url("https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg")
+    center center no-repeat;
+  background-size: 124px 33px;
+}
+.logo a {
+  text-indent: -999em;
+  height: 70px;
+  display: block;
+}
+.main-nav,
+.main-nav li {
+  float: left;
+}
+.main-nav {
+  margin-left: 170px;
+}
+.main-nav a {
+  line-height: 68px;
+  display: block;
+  padding: 0 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main-nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+.account {
+  float: right;
+}
+.account .btn {
+  display: inline-block;
+  width: 84px;
+  height: 36px;
+  line-height: 32px;
+  border-radius: 20px;
+  background: #fff;
+  color: #222;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 15px;
+  border: 2px solid #fff;
+  transition: all 0.2s ease;
+}
+.account .btn-secondary {
+  color: #fff;
+  background: none;
+}
+.account .btn:hover {
+  background: #ccc;
+}
+.account .btn-secondary:hover {
+  background: blue;
+  border-color: #ccc;
+}
+.hero {
+  min-width: 1150px;
+  height: 600px;
+  background: #333 url("hero-back-to-school-1.jpg") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: auto;
+}
+.hero h2 {
+  margin-top: 160px;
+  font-size: 70px;
+  line-height: 60px;
+  letter-spacing: -2px;
+  font-style: italic;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.hero p {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.hero .btn {
+  display: block;
+  width: 370px;
+  height: 50px;
+  line-height: 48px;
+  border-radius: 20px;
+  background: #0070ba;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto 8px;
+  border: 2px solid #0070ba;
+  transition: all 0.2s ease;
+}
+.hero .btn-secondary {
+  border-color: #fff;
+  background: none;
+}
+.hero .btn:hover {
+  background: #005ea6;
+}
+.hero .btn-secondary:hover {
+  border-color: #ccc;
+  background: none;
+}
