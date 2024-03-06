@@ -1,0 +1,17 @@
+.heading {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.img {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
+.bioCOnt {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
