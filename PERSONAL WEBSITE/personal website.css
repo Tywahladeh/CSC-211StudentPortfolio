@@ -1,0 +1,413 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  header.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .logo {
+    height: 3rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  .header nav ul::-webkit-scrollbar{
+    display: none;
+}
+  
+  header nav li {
+    margin-left: 2rem;
+  }
+  
+  header nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: #ff9800;
+  }
+
+  #porfolio .con {
+    text-align: center;
+  }
+  
+  #home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("IMAGES/pic.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #home .detel {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #333;
+  }
+  
+  #home .detel h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: #f4f4f4;
+  }
+  
+  #home .detel h1 span {
+    color: #ff9800;
+  }
+  
+  #home .detel p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+  }
+  
+  #home .detel a {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #home .detel a:hover {
+    background-color: #ff5722;
+  }
+  
+  #home .images {
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    transform: translateY(50%);
+    width: 40%;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  #portfolio {
+    display: flex;
+    flex-direction: row;
+    background: skyblue;
+    color: #fff;
+  }
+  
+
+  #portfolio .ll{
+    color: #fff;
+  }
+
+  #portfolio .con {
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  #home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("IMAGES/pic.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #home .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #333;
+  }
+  
+  #home .container h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  #home .container h1 span {
+    color: #ff9800;
+  }
+  
+  #home .container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+  }
+  
+  #home .container a {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #333;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #home .container a:hover {
+    background-color: #ff5722;
+  }
+  
+  #about,
+  #services,
+  #portfolio,
+  #contact {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #about h2,
+  #services h2,
+  #portfolio h2,
+  #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff9800;
+  }
+  
+  #about p,
+  #services p,
+  #portfolio p,
+  #contact p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+    text-align: center;
+  }
+
+  .copyright {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url(IMAGES/pic.jpeg);
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  #about,
+  #services,
+  #portfolio,
+  #contact {
+    padding: 5rem 2rem;
+  }
+  
+  #about h2,
+  #services h2,
+  #portfolio h2,
+  #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff9800;
+  }
+  
+  #about p,
+  #services p,
+  #portfolio p,
+  #contact p {
+    font-size:15px ;
+  }
+
+  #home .container {
+    padding: 5rem 2rem;
+  }
+  
+  #home .container h1 {
+    font-size: 4rem;
+  }
+  
+  #home .container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+  }
+  
+  #home .container a {
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  #about,
+  #services,
+  #portfolio,
+  #contact {
+    padding: 5rem 2rem;
+  }
+  
+  #about h2,
+  #services h2,
+  #portfolio h2,
+  #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff9800;
+  }
+  
+  #about p,
+  #services p,
+  #portfolio p,
+  #contact p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 30rem;
+    text-align: center;
+  }
+  
+  .copyright {
+    padding: 5rem 2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #home .container {
+      padding: 3rem 1rem;
+    }
+  
+    #home .container h1 {
+      font-size: 3rem;
+    }
+  
+    #home .container p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    #home .container a {
+      padding: 0.5rem 1.5rem;
+    }
+  
+    #about,
+    #services,
+    #portfolio,
+    #contact {
+      padding: 3rem 1rem;
+    }
+  
+    #about h2,
+    #services h2,
+    #portfolio h2,
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    #about p,
+    #services p,
+    #portfolio p,
+    #contact p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .copyright {
+      padding: 3rem 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #home .container {
+      padding: 2rem 1rem;
+    }
+  
+    #home .container h1 {
+      font-size: 2.5rem;
+    }
+  
+    #home .container p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    #home .container a {
+      padding: 0.5rem 1rem;
+    }
+  
+    #about,
+    #services,
+    #portfolio,
+    #contact {
+      padding: 2rem 1rem;
+    }
+  
+    #about h2,
+    #services h2,
+    #portfolio h2,
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    #about p,
+    #services p,
+    #portfolio p,
+    #contact p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .copyright {
+      padding: 2rem 1rem;
+    }
+  }
