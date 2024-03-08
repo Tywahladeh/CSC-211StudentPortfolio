@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-y: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   margin: 20px;
+}
+nav .nav-text h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    color:rgba(0, 0, 0, 0.849);
+    font-size: 15px;
+    font-weight: 600;
+
+}
+nav ul li a:hover{
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+nav .nav-btn{
+    margin-right: 5%;
+    display: flex;
+}
+.nav-btn>a{
+    margin-right: 10px;
+    color: black;
+    padding: 5px;
+    font-weight: 600;
+}
+.nav-btn .green{
+    color: white;
+    padding: 5px;
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+}
+.green:hover{
+    border: 2px solid green;
+    background: transparent;
+    color: black;
+    transition: .2s ease-out;
+}
+.white:hover{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+section{
+    padding: 25px;
+    margin-top: 30px;
+    display: flex;   
+    margin-left: 30px;
+}
+section img{
+    width: 100%;
+}
+section .txt .blue{
+    color: blueviolet;
+    font-size: 20px;
+}
+section .txt h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+section .txt .black{
+    margin-top: 10%;
+    max-width: 60%;
+    font-size: 18px;
+}
+section .txt-a{
+    margin-top: 20px;
+    display: flex;
+}
+section .txt-a a{
+    margin-right: 20px;
+    font-size: 18px;
+    color: black;
+    padding: 5px;
+}
+section .txt-a .green{
+    color: white;
+    padding: 5px;
+    background-color: green;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+section .txt-a .green:hover{
+    border: 2px solid green;
+    background: transparent;
+    color: black;
+    transition: .2s ease-out;
+}
