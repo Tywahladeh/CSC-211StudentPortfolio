@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: grey;
+        font-family: cursive;
+    }
+    .topnav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: chocolate;
+            margin: 0;
+
+        }
+        .topnav a{
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        .topnav a:hover{
+            text-decoration: underline;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto;
+        margin: 10px;
+        height: 80vh;
+    }
+
+    .container>div {
+        margin: 10px;
+        padding: 5px;
+        background: lightblue;
+    }
+
+    #grid-item {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="grid-item">
+            <div class="topnav" id="myTopnav">
+                <a href="assignment.html" class="active">Home</a>
+        <a href="table.html">Tables</a>
+        <a href="aboutme.html">About me</a>
+        <a href="forms.htm">Forms</a>
+        <a href="grid.html">Grid</a>
+            </div>
+        </div>
+        <div id="grey"><br>
+            <h1>Jamin's CV</h1>
+            <hr>
+            <hr>
+            <br>
+            <img src="pic.jpg" alt="my picture" style="  width: 10%; height: 10%;"><br><br>
+            <p><b>Name: </b><span>Adeoye Eniola Jamin</span></p>
+            <p><b>Age: </b> <span>19 years</span></p>
+            <p><b>Level:</b> <span>200L</span></p>
+            <p><b>Department:</b> <span>Computer science</span></p>
+            <p><b>Matric Number:</b> <span>220502080</span></p>
+            <!-- <p><b>Projects:</b> <span> <a href="https://quizzo-com.vercel.app/">Quiz app</a>,
+                    <a href="https://weather-app-ruddy-two-56.vercel.app/">Weather App</a>,
+                    <a href="https://movie-recorn.vercel.app/">Movie Recommendation app</a>,
+                    <a href="https://music-player-topaz-eta.vercel.app/">Music Player</a></span>
+            </p> -->
+            <br>
+            <hr>
+            <hr>
+        </div>
+        <div id="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum impedit recusandae, corporis pariatur ipsa maiores fugiat earum nemo eos omnis, eum neque ullam saepe commodi ipsam esse, excepturi molestiae nulla fugit. Blanditiis perspiciatis, similique repellat laborum commodi ipsa quasi! Reiciendis repudiandae, a odit officia adipisci minima architecto eos perspiciatis.</div>
+        <div id="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto quos, praesentium aliquid illum ipsum at cupiditate repellendus nisi doloremque! Maxime, porro assumenda repellat tempore ducimus libero asperiores cum? Aspernatur, at et! Exercitationem suscipit pariatur perferendis veniam assumenda aliquid consequuntur repellendus! Eum debitis laborum omnis nostrum. Mollitia, nam est. Inventore, laudantium? Odio nemo at maxime incidunt. Enim sint ad ea iure ipsam reprehenderit, qui sit accusamus incidunt optio voluptatibus officia.</div>
+    </div>
+
+    <script>
+        const home = document.getElementById('home');
+        const news = document.getElementById('news');
+        const about = document.getElementById('contact');
+        const grey = document.getElementById('grey');
+        const blue = document.getElementById('blue');
+        const green = document.getElementById('green');
+
+        home.addEventListener('click', () =>{
+            grey.style.backgroundColor = "grey"
+            grey.style.Color = "white"
+        });
+        news.addEventListener('click', () =>{
+            blue.style.backgroundColor = "blue"
+            blue.style.color = "white"
+        });
+        about.addEventListener('click', () =>{
+            green.style.backgroundColor = "green"
+            green.style.color = "white"
+        });
+
+    </script>
+</body>
+
+</html>
