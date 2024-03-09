@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Style for the navigation bar */
+      nav {
+        background-color: #333333;
+        overflow: hidden;
+      }
+
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Hide the checkbox input */
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      /* Style for the hamburger icon label */
+      .icon {
+        display: none;
+        float: right;
+        cursor: pointer;
+        padding: 15px;
+        background-color: #333;
+        color: white;
+      }
+
+      /* Style for the navigation links when the checkbox is checked (small screens) */
+      input[type="checkbox"]:checked + nav a {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+
+      /* Style for the hamburger icon when the checkbox is checked (small screens) */
+      input[type="checkbox"]:checked + .icon::after {
+        content: "\00d7"; /* Display 'X' (close icon) when checked */
+      }
+
+      /* Display the hamburger icon on small screens */
+      @media screen and (max-width: 600px) {
+        .icon {
+          display: block;
+        }
+
+        /* Hide the navigation links on small screens by default */
+        nav a {
+          display: none;
+        }
+
+      }
+    </style>
+  </head>
+  <body style="background-color: aqua;">
+    <input type="checkbox" id="menu-toggle" />
+    <label class="icon" for="menu-toggle">&#9776;</label>
+    <nav>
+      <a href="flexbox.html">HOME</a>
+      <a href="biodata.html">ABOUT</a>
+      <a href="Time table.html">TIME-TABLE</a>
+      <a href="cv.html">CV</a>
+      <a href="beginner.html">TAGS</a>
+    </nav>
+    <img src="me.jpg" width="1350" height="500">
+
+    
+  </body>
+</html>
