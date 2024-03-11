@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        body{
+            background-color: grey;
+        font-family: cursive;
+        }
+        table,
+        th,
+        td {
+            border: 2px solid;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 5%;
+
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            
+        }
+
+        
+
+        tr:hover {
+            background-color: coral;
+        }
+        td:hover{
+            background-color: lawngreen;
+            cursor: pointer;
+        }
+        .topnav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: chocolate;
+            margin: 0;
+
+        }
+        .topnav a{
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+        .topnav a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body style=" align-items: center; justify-content: center; height: 100vh;">
+    <div class="topnav" id="myTopnav">
+        <a href="assignment.html" class="active">Home</a>
+        <a href="table.html">Tables</a>
+        <a href="aboutme.html">About me</a>
+        <a href="forms.htm">Forms</a>
+        <a href="grid.html">Grid</a>
+    </div>
+    <table >
+        <thead>
+            <tr>
+                <th colspan="9">Lecture time table</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> </td>
+                <td>8-9</td>
+                <td>9-10</td>
+                <td>10-11</td>
+                <td>11-12</td>
+                <td>12-1</td>
+                <td>1-2</td>
+                <td>2-3</td>
+                <td>3-4</td>
+            </tr>
+
+            <tr>
+                <td>MON</td>
+                <td col="3">Free</td>
+                <td colspan="2">CSC 211</td>
+                <td colspan="3">Free</td>
+                <td colspan="2">Mth 231</td>
+            </tr>
+
+            <tr>
+                <td>TUE</td>
+                <td colspan="2">CSC 215</td>
+                <td colspan="2"></td>
+                <td colspan="2">CSC 203</td>
+                <td colspan="2">ICT 217</td>
+            </tr>
+
+            <tr>
+                <td>WED</td>
+                <td>MTH 201</td>
+                <td colspan="2">Free</td>
+                <td colspan="2">CSC 205</td>
+                <td colspan="3"></td>
+            </tr>
+
+            <tr>
+                <td>THUR</td>
+                <td colspan="8">Free</td>
+            </tr>
+
+            <tr>
+                <td>FRi</td>
+                <td colspan="">free</td>
+                <td colspan="2">STA 221</td>
+                <td colspan="5">FREE</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="9">End</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

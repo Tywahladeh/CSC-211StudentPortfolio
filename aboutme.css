@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: rgb(7, 7, 23);
+    font-family: cursive;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+nav .logo{
+    margin-left: 20px;
+}
+nav .logo h2{
+    color: rgba(255, 255, 255, 0.749);
+    font-size: 30px;
+}
+nav .btn{
+    margin-right: 20px;
+
+}
+nav .btn a{
+    background-color: rgba(32, 38, 110, 0.564);
+    color: rgba(255, 255, 255, 0.749);
+    padding: 15px;
+    border-radius: 5px;
+}
+.topnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topnav a{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.749);
+    font-size: 20px;
+}
+.topnav a:hover{
+    text-decoration: underline;
+}
+main{
+    padding: 40px;
+    display: flex;
+    gap: 20%;
+}
+main .txt{
+    padding: 20px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.749);
+    margin: 50px;
+}
+.txt h1{
+    font-size: 40px;
+}
+main .img{
+    border: 5px solid rgba(32, 38, 110, 0.564);
+    border-top-right-radius: 70px;
+    background-image: url('man.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: center;
+    width: 30%;
+}
