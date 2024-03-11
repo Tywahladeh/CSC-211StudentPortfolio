@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #1b9bff;
+}
+.biof{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+.form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.lab{
+    background: #2c3e50;;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+.input{
+    background: rgb(128, 128, 128);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
