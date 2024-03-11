@@ -1,0 +1,347 @@
+header{
+    display: flex;
+    width: 1680px;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-left: -100px;
+    transition: all 3s;
+}
+li{
+    display: inline;
+    list-style-type: none;
+    justify-content:space-evenly;
+    padding: 9px;
+}
+.li2{
+    padding: 20px;
+    position: relative;
+    left: 50px;
+}
+.a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.a:hover{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+#search{
+    position: relative;
+    top: 18px;
+    left: -10px;
+}
+.a3{
+    text-decoration: none;
+    color: black;
+}
+.a3:hover{
+    color: white;
+}
+#search:hover,#shopping:hover,#user:hover{
+   color: red;
+   cursor: pointer;
+   font-size: 25px;
+
+}
+#shopping{
+    position: relative;
+    top: 18px;
+    left: -80px;
+}
+#user{
+    position:relative;
+    top: 18px;
+    left: -150px;
+}
+#flex-items{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    padding: 10px;
+    display: none;
+}
+#para{
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+    text-decoration: none;
+    color: black;
+}
+#a1{
+    text-decoration: none;
+    color: black;
+    transition: all 2s;
+}
+#a12:hover + div{
+    display: block;
+}
+.flex1{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    width: 800px;
+    height: 600px;
+}
+.a:hover+div{
+    display: block;
+}
+#grid-items{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 0px;
+    height: 520px;
+    width: 550px;
+}
+.h3{
+    position: relative;
+    left: 220px;
+    bottom: 380px;
+}
+.grid-img{
+    height: 70px;
+
+}
+#flex2{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 400px;
+    position: absolute;
+    background-color: white;
+    top: 55px;
+    display: none;
+    border-radius: 10px;
+    right: 20px;
+    width: 1300px;
+    height: 500px;
+}
+.divs{
+    padding: 30px 30px;
+}
+#flex3{
+    display: flex;
+    position: relative;
+    left: 200px;
+    bottom: 300px;
+}
+#a13:hover+div{
+    display: block;
+}
+.flex4{
+    display: flex;
+    padding: 30px;
+    position: relative;
+    bottom: 30px;
+    left: 160px;
+    bottom: 140px;
+}
+#home{
+    display: flex;
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    padding: 30px;
+    right: 50px;
+    border-radius: 10px;
+    display: none;
+    width: 1300px;
+}
+#a14:hover+div{
+    display: block;
+}
+#div34{
+    position: absolute;
+    background-color: white;
+    width: 1000px;
+    top: 50px;
+    padding: 20px 20px;
+    right: 40px;
+    height: 400px;
+    border-radius: 10px;
+    display: none;
+}
+#flex5{
+    display: flex;
+    position: relative;
+    left: 190px;
+    bottom: 380px;
+    padding: 20px;
+}
+#laptop:hover+div{
+    display: block;
+}
+#dis{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    top: 50px;
+    display: none;
+    right: 290px;
+    padding: 20px;
+    width: 450px;
+    height: 200px;
+}
+#bus{
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+#Dis:hover+div{
+    display: block;
+}
+#repair{
+    display: flex;
+    position: relative;
+    left: 190px;
+    bottom: 220px;
+}
+#Sprt{
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    width: 900px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: none;
+}
+#Suprt:hover+div{
+    display: block;
+}
+#bg{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Z_Flip5_yellow_1440x640.jpg?imwidth=2560);
+    height: 76vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+    bottom: 30px;
+}
+#info{
+    position: relative;
+    left: 700px;
+    top: 200px;
+}
+#grid-flex,#grid-flex1{
+    display: flex;
+}
+#grid-flex1{
+    margin-top: 20px;
+}
+.move{
+    position: relative;
+    left: 670px;
+    bottom: 650px;
+}
+.grid3{
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+}
+.img1:hover{
+    transform: scale(0.9,0.9);
+    transition: all 2s;
+}
+.bg-2{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Z-Fold5_1440x810.jpg?$1440_810_JPG$);
+    height: 99vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    bottom: 670px;
+}
+#bg-3{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/QLED_QE1C.jpg?$1440_810_JPG$);
+    height: 99vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    bottom: 710px;
+}
+#bg-4{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/8kg-Ecobubble.jpg?$1440_810_JPG$);
+    height: 99vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    bottom: 750px;
+}
+.dot{
+    height: 20px;
+    width: 20px;
+}
+#int1{
+    accent-color: rgb(7, 160, 144);
+}
+#int-1{
+    accent-color: rgb(12, 214, 110);
+}
+#int2{
+    background-color: greenyellow;
+}
+.dot1,.dot2{
+    height: 20px;
+    width: 20px;
+}
+#int-2{
+    accent-color: red;
+}
+#flex-ph{
+    display: flex;
+    position: relative;
+    left: 340px;
+    bottom: 780px;
+    border-radius: 20px;
+}
+.p1:hover{
+   text-decoration: underline;
+   transform: scale(0.9,0.9);
+   transition: all 0.9s;
+}
+#img1:hover{
+    transform: scale(0.9,0.9);
+    transition: all 2s;
+}
+#Flex-Do{
+    display: flex;
+}
+#Dbt{
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: all 2s;
+}
+@keyframes blink {
+    from{
+        background-color: rgb(0, 0, 0);
+    }
+    to{
+        background-color:rgb(233, 69, 69);
+        transition: all 3s;
+    }
+}
+*{
+    box-sizing: border-box;
+    /* text-decoration: none; */
+}
+body{
+    overflow-x: hidden;
+}

@@ -1,0 +1,22 @@
+.container{
+    background:grey;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
+    display:flex;
+}
+.container>div{
+    font-size: 25px;
+    margin: 20px;
+    background:tomato;
+    line-height: 15px;
+    color:white;
+    padding: 10px;
+}
+@media(max-width:750px){
+    .container{
+        flex-direction:column;
+    }
+}
