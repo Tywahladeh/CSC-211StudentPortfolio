@@ -1,0 +1,13 @@
+.container{
+    flex-direction: column;
+    background: grey;
+    display: flex;
+}
+.container > div {
+    font-size: 25px;
+    margin: 20px;
+    background: rgb(31, 14, 95);
+    line-height: 15px;
+    color: white;
+    padding: 10px;
+}
